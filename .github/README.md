@@ -24,4 +24,4 @@
 
 ### ㅤㅤㅤㅤCREDITS 😘
 
-🖤 𝐃𝐄𝐕 : ᴍᴇ ᴏɴ [ɢɪᴛʜᴜʙ💞](https://github.com/Devarora0987)ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ᴍᴇ ᴏɴ [ᴛᴇʟᴇɢʀᴀᴍ💔](https://telegram.me/devarora0981)
+🖤 𝐃𝐄𝐕 : ᴍᴇ ᴏɴ [ɢɪᴛʜᴜʙ💞](https://github.com/Devarora0987)ㅤㅤㅤㅤㅤㅤㅤ ᴍᴇ ᴏɴ [ᴛᴇʟᴇɢʀᴀᴍ💔](https://telegram.me/devarora0981)
