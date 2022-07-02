@@ -368,18 +368,18 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
+                            text="❣️ sᴜᴩᴩᴏʀᴛ ❣️", callback_data="fallen_support"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+                            text="🌷 ᴄᴏᴍᴍᴀɴᴅs 🌷", callback_data="help_back"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
+                            text="🤍 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🤍", url=f"https://t.me/{OWNER_USERNAME}"
                         ),
                         InlineKeyboardButton(
-                            text="sᴏᴜʀᴄᴇ",
+                            text="💥 sᴏᴜʀᴄᴇ 💥",
                             url="https://telegra.ph/file/9b0455dae14d5639f936d.mp4",
                         ),
                     ],
@@ -398,18 +398,18 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="❣️ sᴜᴩᴩᴏʀᴛ ❣️", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="🌷 ᴜᴩᴅᴀᴛᴇs 🌷", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/devarora0981"
+                            text="🤍 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🤍", url="https://t.me/devarora0981"
                         ),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ", url="https://github.com/Devarora0981"
+                            text="💥 ɢɪᴛʜᴜʙ 💥", url="https://github.com/Devarora0981"
                         ),
                     ],
                     [
@@ -736,7 +736,7 @@ def main():
             dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
                 "https://telegra.ph/file/36be820a8775f0bfc773e.jpg",
-                caption="ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ ᴀɴᴏɴʏᴍᴏᴜs 🥀",
+                caption="ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🤍 ʙʏ ᴅᴇᴠ 🥀",
             )
         except Unauthorized:
             LOGGER.warning(
