@@ -410,5 +410,5 @@ __help__ = """
 When marked as AFK, any mentions will be replied to with a message to say you're not available!
 """
 
-__mod_name__ = "Aғᴋ"
+__mod_name__ = "Aғᴋ" 
 __command_list__ = ["afk"]
