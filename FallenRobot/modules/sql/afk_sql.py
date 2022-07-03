@@ -88,4 +88,4 @@ def __load_afk_users():
         SESSION.close()
 
 
-__load_afk_users()
+__load_afk_users()  
