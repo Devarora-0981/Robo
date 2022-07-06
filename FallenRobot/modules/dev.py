@@ -193,6 +193,6 @@ Owner only
  ❍ /logs Get heroku dyno logs.
 
 ⚠️ Read from top
-Visit @BullyxSupport for more information.
+Visit @We_RfRiEnDs for more information.
 
 """
