@@ -1,6 +1,6 @@
-#Don't Remove This Line 
-#TG : @LEGEND_MUKUND
-#Github : Legend-Mukund
+# Don't Remove This Line
+# TG : @LEGEND_MUKUND
+# Github : Legend-Mukund
 
 import random
 import asyncio
@@ -21,34 +21,40 @@ PHOTO = [
 
 SHREYXD = [
     [
-        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Dev_arora_0981"),
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Devarora0981"),
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
+    ]
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/Dev_ManagerBot?startgroup=true"),
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            url=f"https://t.me/Dev_ManagerBot?startgroup=true",
+        ),
     ],
 ]
 
 lol = "https://telegra.ph/file/b66e1dd4dd58fc0a3931c.jpg"
+
 
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
     await asyncio.sleep(1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ..")
-    await asyncio.sleep(0.1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ...")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
+    await asyncio.sleep(0.2)
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
     await accha.delete()
-    await asyncio.sleep(0.1)
-    umm = await m.reply_sticker("CAACAgUAAxkBAAI8xWLHARtUmG1OvRFyupIvRt8k39NkAAL1CAACYnB9KWTD8cH10NiqKQQ")
+    await asyncio.sleep(0.2)
+    umm = await m.reply_sticker(
+        "CAACAgUAAxkBAAI8xWLHARtUmG1OvRFyupIvRt8k39NkAAL1CAACYnB9KWTD8cH10NiqKQQ"
+    )
     await umm.delete()
-    await asyncio.sleep(0.1)
+    await asyncio.sleep(0.5)
     await m.reply_photo(
         lol,
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
         ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [༒[𝑫𝑬𝑽𖣔𝑨𝑹𝑶𝑹𝑨]༒](https://t.me/{OWNER_USERNAME})
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐃𝐄𝐕](https://t.me/{OWNER_USERNAME})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
@@ -58,5 +64,5 @@ async def restart(client, m: Message):
   
   » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
         ━━━━━━━━━━━━━━━━━━━""",
-        reply_markup=InlineKeyboardMarkup(SHREYXD)
+        reply_markup=InlineKeyboardMarkup(SHREYXD),
     )
