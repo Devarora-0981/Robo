@@ -12,8 +12,8 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ᴢᴇɴ ✘ ʀᴏ�
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-<a href="https://github.com/Adityakjha1/zentry/stargazers"><img src="https://img.shields.io/github/stars/AnonymousR1025/FallenRobot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/Adityakjha1/zentry/network/members"> <img src="https://img.shields.io/github/forks/AnonymousR1025/FallenRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/Adityakjha1/zentry/stargazers"><img src="https://img.shields.io/github/stars/Adityakjha1/zentry?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/Adityakjha1/zentry/network/members"> <img src="https://img.shields.io/github/forks/Adityakjha1/zentry?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/Adityakjha1/Zentry/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=white&label=telethon&logo=python&logoColor=blue&style=for-the-badge" /></a>
