@@ -96,9 +96,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="💔𝚂𝚄𝙿𝙿𝙾𝚁𝚃💔", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(
-            text="🤍𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁🤍", url=f"https://t.me/{OWNER_USERNAME}"
-        ),
+        InlineKeyboardButton(text="🤍𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁🤍", url=f"https://t.me/{OWNER_USERNAME}"),
     ],
 ]
 
