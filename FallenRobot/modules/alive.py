@@ -40,9 +40,9 @@ async def awake(event):
     a = await d.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ.........")
     await lvda(1)
     await a.delete()
-    x = await tbot.send_file(event.chat_id, file="CAACAgUAAx0CWOSA3AABBtPDYsX2Vt5j5vHwrarbQLgTX1kO-LQAAvAIAAJicH0p17vHbwZpufkpBA")
-    await lvda(1.5)
-    await x.delete()
+    #x = await tbot.send_file(event.chat_id, file="CAACAgUAAx0CWOSA3AABBtPDYsX2Vt5j5vHwrarbQLgTX1kO-LQAAvAIAAJicH0p17vHbwZpufkpBA")
+    #await lvda(1.5)
+    #await x.delete()
     await tbot.send_file(event.chat_id, ran, caption=TEXT, buttons=BUTTON)
 
 
