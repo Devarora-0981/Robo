@@ -1,6 +1,7 @@
 import os
 import re
 import random
+from asyncio import sleep as lvda
 from platform import python_version as kontol
 from telethon import events, Button
 from telegram import __version__ as telever
@@ -30,7 +31,20 @@ async def awake(event):
         ]
     ]
     ran = random.choice(PHOTO)
+    l = await event.reply_text("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ...")
+    await lvda(1)
+    o = await l.edit_text("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ.........")
+    await lvda(1)
+    d = await o.edit_text("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ...")
+    await lvda(1)
+    a = await d.edit_text("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ.........")
+    await lvda(1)
+    await a.delete()
+    x = await event.reply_sticker("CAACAgUAAx0CWOSA3AABBtPDYsX2Vt5j5vHwrarbQLgTX1kO-LQAAvAIAAJicH0p17vHbwZpufkpBA")
+    await lvda(1.5)
+    await x.delete()
     await tbot.send_file(event.chat_id, ran, caption=TEXT, buttons=BUTTON)
 
 
 ## Alive mod
+#By Hyper
