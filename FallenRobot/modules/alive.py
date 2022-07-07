@@ -1,10 +1,10 @@
-#Don't Remove This Line 
-#TG : @Abishnoi1M 
-#Channel : @Abishnoi_bots
-#Github : KingAbishnoi 
+# Don't Remove This Line
+# TG : @Abishnoi1M
+# Channel : @Abishnoi_bots
+# Github : KingAbishnoi
 
 
-# add yours... 
+# add yours...
 
 import random
 import asyncio
@@ -29,9 +29,13 @@ BYABISHNOI = [
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/Abishnoi_ro_bot?startgroup=true"),
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            url=f"https://t.me/Abishnoi_ro_bot?startgroup=true",
+        ),
     ],
 ]
+
 
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
@@ -43,7 +47,9 @@ async def restart(client, m: Message):
     await accha.edit("ᴀʟɪᴠɪɴɢ...")
     await accha.delete()
     await asyncio.sleep(0.1)
-    umm = await m.reply_sticker("CAACAgUAAx0CUgguZAACdL9iuTsITX6x0Z7kSMhZ_2IeIBlmewAC8gUAAnEhyFVGFPeLco2P_x4E")
+    umm = await m.reply_sticker(
+        "CAACAgUAAx0CUgguZAACdL9iuTsITX6x0Z7kSMhZ_2IeIBlmewAC8gUAAnEhyFVGFPeLco2P_x4E"
+    )
     await umm.delete()
     await asyncio.sleep(0.1)
     await m.reply_photo(
@@ -56,5 +62,5 @@ async def restart(client, m: Message):
   » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
   » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{version_info[0]}.{version_info[1]}.{version_info[2]}`
         ━━━━━━━━━━━━━━━━━━━""",
-        reply_markup=InlineKeyboardMarkup(BYABISHNOI)
+        reply_markup=InlineKeyboardMarkup(BYABISHNOI),
     )
