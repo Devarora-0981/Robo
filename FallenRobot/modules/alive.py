@@ -1,6 +1,6 @@
-#Don't Remove This Line 
-#TG : @LEGEND_MUKUND
-#Github : Legend-Mukund
+# Don't Remove This Line
+# TG : @LEGEND_MUKUND
+# Github : Legend-Mukund
 
 import random
 import asyncio
@@ -25,11 +25,15 @@ SHREYXD = [
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/Dev_ManagerBot?startgroup=true"),
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            url=f"https://t.me/Dev_ManagerBot?startgroup=true",
+        ),
     ],
 ]
 
 lol = "https://telegra.ph/file/b66e1dd4dd58fc0a3931c.jpg"
+
 
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
@@ -41,7 +45,9 @@ async def restart(client, m: Message):
     await accha.edit("ᴀʟɪᴠɪɴɢ...")
     await accha.delete()
     await asyncio.sleep(0.1)
-    umm = await m.reply_sticker("CAACAgUAAxkBAAI8xWLHARtUmG1OvRFyupIvRt8k39NkAAL1CAACYnB9KWTD8cH10NiqKQQ")
+    umm = await m.reply_sticker(
+        "CAACAgUAAxkBAAI8xWLHARtUmG1OvRFyupIvRt8k39NkAAL1CAACYnB9KWTD8cH10NiqKQQ"
+    )
     await umm.delete()
     await asyncio.sleep(0.1)
     await m.reply_photo(
@@ -58,5 +64,5 @@ async def restart(client, m: Message):
   
   » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
         ━━━━━━━━━━━━━━━━━━━""",
-        reply_markup=InlineKeyboardMarkup(SHREYXD)
+        reply_markup=InlineKeyboardMarkup(SHREYXD),
     )
