@@ -40,21 +40,21 @@ async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
     await asyncio.sleep(1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ..")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
     await asyncio.sleep(0.1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ...")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
     await accha.delete()
     await asyncio.sleep(0.1)
     umm = await m.reply_sticker(
         "CAACAgUAAxkBAAI8xWLHARtUmG1OvRFyupIvRt8k39NkAAL1CAACYnB9KWTD8cH10NiqKQQ"
     )
     await umm.delete()
-    await asyncio.sleep(0.1)
+    await asyncio.sleep(0.5)
     await m.reply_photo(
         lol,
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
         ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [༒[𝑫𝑬𝑽𖣔𝑨𝑹𝑶𝑹𝑨]༒](https://t.me/{OWNER_USERNAME})
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐃𝐄𝐕](https://t.me/{OWNER_USERNAME})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
