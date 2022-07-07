@@ -35,7 +35,7 @@ async def awake(event):
     await lvda(1)
     o = await l.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ.........")
     await lvda(1)
-    d = await o.editt("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ...")
+    d = await o.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ...")
     await lvda(1)
     a = await d.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ.........")
     await lvda(1)
