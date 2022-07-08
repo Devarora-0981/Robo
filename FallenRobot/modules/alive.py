@@ -1,36 +1,68 @@
-import os
-import re
-import random
-from platform import python_version as kontol
-from telethon import events, Button
-from telegram import __version__ as telever
-from telethon import __version__ as tlhver
-from pyrogram import __version__ as pyrover
-from FallenRobot.events import register
-from FallenRobot import telethn as tbot
+# Don't Remove This Line
+# TG : @LEGEND_MUKUND
+# Github : Legend-Mukund
 
+import random
+import asyncio
+from pyrogram import filters, __version__ as pver
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from telethon import __version__ as tver
+from telegram import __version__ as lver
+from platform import python_version as pyver
+from FallenRobot import BOT_USERNAME, OWNER_USERNAME, SUPPORT_CHAT, pbot
 
 PHOTO = [
-    "https://te.legra.ph/file/69a14dfc3e19027734d10.jpg",
-    "https://te.legra.ph/file/49b0000f95b740904aeaa.jpg",
+    "https://telegra.ph/file/47f1c6b57321808e9eb61.jpg",
+    "https://telegra.ph/file/d2433e011fb8eff1650f8.mp4",
+    "https://telegra.ph/file/4af05a90d3058915d20e6.jpg",
+    "https://telegra.ph/file/a0a79755bc3336f47a30b.jpg",
+    "https://telegra.ph/file/c35acfb3cd4699c7a9e2c.jpg",
 ]
 
+SHREYXD = [
+    [
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/pythonxgamer"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            url=f"https://t.me/zenxrobot?startgroup=true",
+        ),
+    ],
+]
 
-@register(pattern=("/alive"))
-async def awake(event):
-    TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ ᴢᴇɴ ✘ ʀᴏʙᴏᴛ​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-    TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [ᴀᴅɪᴛʏᴀ](https://t.me/pythonxgamer)** \n\n"
-    TEXT += f"» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
-    TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
-    TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
-    BUTTON = [
-        [
-            Button.url("ʜᴇʟᴘ​", "https://t.me/zenXRobot?start=help"),
-            Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/zensupport"),
-        ]
-    ]
-    ran = random.choice(PHOTO)
-    await tbot.send_file(event.chat_id, ran, caption=TEXT, buttons=BUTTON)
+lol = "https://te.legra.ph/file/49b0000f95b740904aeaa.jpg"
 
 
-## Alive mod
+@pbot.on_message(filters.command("alive"))
+async def restart(client, m: Message):
+    await m.delete()
+    accha = await m.reply("⚡")
+    await asyncio.sleep(1)
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
+    await asyncio.sleep(0.5)
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
+    await accha.delete()
+    await asyncio.sleep(0.5)
+    umm = await m.reply_sticker(
+        "CAACAgUAAxkBAAI8xWLHARtUmG1OvRFyupIvRt8k39NkAAL1CAACYnB9KWTD8cH10NiqKQQ"
+    )
+    await umm.delete()
+    await asyncio.sleep(1)
+    await m.reply_photo(
+        lol,
+        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 𝙕𝙀𝙉 ✘ 𝙍𝙊𝘽𝙊𝙏**
+        ━━━━━━━━━━━━━━━━━━━
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐀𝐃𝐈𝐓𝐘𝐀](https://t.me/{OWNER_USERNAME})
+  
+  » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
+  
+  » **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
+  
+  » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
+  
+  » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
+        ━━━━━━━━━━━━━━━━━━━""",
+        reply_markup=InlineKeyboardMarkup(SHREYXD),
+    )
