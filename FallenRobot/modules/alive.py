@@ -39,7 +39,11 @@ lol = "https://telegra.ph/file/b66e1dd4dd58fc0a3931c.jpg"
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
+    await asyncio.sleep(0.5)
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
+    await asyncio.sleep(0.5)
     await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
     await asyncio.sleep(0.5)
     await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
@@ -49,7 +53,7 @@ async def restart(client, m: Message):
         "CAACAgUAAxkBAAI8xWLHARtUmG1OvRFyupIvRt8k39NkAAL1CAACYnB9KWTD8cH10NiqKQQ"
     )
     await umm.delete()
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
     await m.reply_photo(
         lol,
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
