@@ -14,7 +14,7 @@ ANON = "https://telegra.ph/file/7bd111132fce009e4605e.jpg"
 async def repo(client, message):
     await message.reply_photo(
         photo=ANON,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴢᴇɴ ✘ ʀᴏʙᴏᴛ-🇮🇩](t.me/zenXRobot)**
+        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴢᴇɴ ✘ ʀᴏʙᴏᴛ-🇮](t.me/zenXRobot)**
 
 **» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [ᴘʏᴛʜᴏɴXɢᴀᴍᴇʀ](tg://user?id=5374329015)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
@@ -30,7 +30,7 @@ async def repo(client, message):
                     InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=5374329015"),
                     InlineKeyboardButton(
                         "• sᴏᴜʀᴄᴇ •",
-                        url="https://github.com/AnonymousR1025/FallenRobot",
+                        url="https://github.com/Adityakjha1/zentry",
                     ),
                 ]
             ]
