@@ -25,8 +25,8 @@ async def repo(client, message):
         caption=f"""ʜᴇʏ {message.from_user.mention()},\n\n*ɪ ᴀᴍ {}.*
 """,
         reply_markup=InlineKeyboardMarkup(
-            [
-                )
+            )
+                [
                     InlineKeyboardButton("• ᴏᴡɴᴇʀ •"), url="https://t.me/Devarora0981"),
                 ]
             ]
