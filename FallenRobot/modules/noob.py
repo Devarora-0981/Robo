@@ -1,9 +1,9 @@
 
 
 # Dear Pro  , Don't Remove This Line
-# Tg @Abishnoi1M
-# All Bots @Abishnoi_bots
-#Github :- KingAbishnoi
+# Tg @Adityakjha1
+# zen bot @zenxrobot
+#Github :- Adityakjha1
 
 
 
