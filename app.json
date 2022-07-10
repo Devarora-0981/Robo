@@ -42,7 +42,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1356469075"
+         "value": "5374329015"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -54,7 +54,7 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "anonymous_was_bot"
+         "value": "pythonxgamer"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Fallen Support than consider you made an enemy.",
