@@ -22,7 +22,7 @@ Fallen = "https://telegra.ph/file/b66e1dd4dd58fc0a3931c.jpg"
 async def repo(client, message):
     await message.reply_photo(
         photo=Fallen,
-        caption=f"""ʜᴇʏ {message.from_user.mention()},\n\n*ɪ ᴀᴍ {}.*"""
+        caption=f"""ʜᴇʏ {message.from_user.mention()},\n\n*ɪ ᴀᴍ {}.*
 """,
         reply_markup=InlineKeyboardMarkup(
             [
