@@ -1,6 +1,6 @@
 
 
-# Dear Pro  , Don't Remove This Link 
+# Dear Pro  , Don't Remove This Line
 # Tg @Abishnoi1M
 # All Bots @Abishnoi_bots
 #Github :- KingAbishnoi
@@ -19,13 +19,13 @@ from pyrogram.types import (
 
 from FallenRobot import pbot as bot
 
-Fallen = "https://te.legra.ph/file/49b0000f95b740904aeaa.jpg"
+Zen = "https://te.legra.ph/file/49b0000f95b740904aeaa.jpg"
 
 
 @bot.on_message(filters.command(["noob", "owner"]))
 async def repo(client, message):
     await message.reply_photo(
-        photo=Fallen,
+        photo=Zen,
         caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [「 ᴢᴇɴ  ʀᴏʙᴏᴛ 」](t.me/Zenxrobot)**
 """,
         reply_markup=InlineKeyboardMarkup(
