@@ -57,3 +57,4 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ᴢᴇɴ ✘ ʀᴏ�
 </h3>
 
 - <b>[ᴀɴᴏɴʏᴍᴏᴜs](https://github.com/AnonymousR1025)  ➻  [ғᴀʟʟᴇɴ](https://github.com/AnonymousR1025/FallenRobot) </b>
+- <b> owner.py ➻ [ᴀʙɪsʜɴᴏɪ](github.com/Kingabishnoi) 
