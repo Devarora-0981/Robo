@@ -1,6 +1,6 @@
 # Don't Remove This Line
-# TG : @LEGEND_MUKUND
-# Github : Legend-Mukund
+# TG : @pythonxgamer
+# Github : Adityakjha1
 
 import random
 import asyncio
