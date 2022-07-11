@@ -2,10 +2,10 @@ from os import remove
 
 from pyrogram import filters
 
-from AsuXRobot import pbot, arq, BOT_USERNAME as bn
-from AsuXRobot.utils.errors import capture_err
-from AsuXRobot.utils.permissions import adminsOnly
-from AsuXRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
+from FallenRobot import pbot, arq, BOT_USERNAME as bn
+from FallenRobot.utils.errors import capture_err
+from FallenRobot.utils.permissions import adminsOnly
+from FallenRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 
 __mod_name__ = "Aɴᴛɪ-ᴘᴏʀɴ"
 
