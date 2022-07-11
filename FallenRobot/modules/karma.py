@@ -136,6 +136,7 @@ chat_id = message.chat.id
         f"Decremented Karma Of {user_mention} By 1 \nTotal Points: {karma}"
     )
 
+
 @app.on_message(filters.command("karmastat") & filters.group)
 @capture_err
 async def karma(_, message):
