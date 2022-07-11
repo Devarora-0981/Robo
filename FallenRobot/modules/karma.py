@@ -62,6 +62,8 @@ async def upvote(_, message):
     await message.reply_text(
         f"Incremented Karma of {user_mention} By 1 \nTotal Points: {karma}"
     )
+    
+    
 @app.on_message(
     filters.text
     & filters.group
