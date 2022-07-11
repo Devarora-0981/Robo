@@ -182,6 +182,25 @@ async def karma(_, message):
         await message.reply_text(f"**Total Points**: __{karma}__")
 
 
+@app.on_message(filters.command("karma") & ~filters.private)
+@adminsOnly("can_change_info")
+async def captcha_state(_, message):
+    usage = "**Usage:**\n/karma [ON|OFF]"
+    if len(message.command) != 2:
+        return await message.reply_text(usage)
+    chat_id = message.chat.id
+    state = message.text.split(None, 1)[1].strip()
+    state = state.lower()
+    if state == "on":
+        await karma_on(chat_id)
+        await message.reply_text("Enabled karma system.")
+    elif state == "off":
+        karma_off(chat_id)
+        await message.reply_text("Disabled karma system.")
+    else:
+        await message.reply_text(usage)
+
+
 
 
 
