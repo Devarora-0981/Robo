@@ -136,6 +136,52 @@ chat_id = message.chat.id
         f"Decremented Karma Of {user_mention} By 1 \nTotal Points: {karma}"
     )
 
+@app.on_message(filters.command("karmastat") & filters.group)
+@capture_err
+async def karma(_, message):
+    chat_id = message.chat.id
+    if not message.reply_to_message:
+        m = await message.reply_text("Analyzing Karma...Will Take 10 Seconds")
+        karma = await get_karmas(chat_id)
+        if not karma:
+            await m.edit("No karma in DB for this chat.")
+            return
+        msg = f"**Karma list of {message.chat.title}:- **\n"
+        limit = 0
+        karma_dicc = {}
+        for i in karma:
+            user_id = await alpha_to_int(i)
+            user_karma = karma[i]["karma"]
+            karma_dicc[str(user_id)] = user_karma
+            karma_arranged = dict(
+                sorted(karma_dicc.items(), key=lambda item: item[1], reverse=True)
+            )
+        if not karma_dicc:
+            await m.edit("No karma in DB for this chat.")
+            return
+        for user_idd, karma_count in karma_arranged.items():
+            if limit > 9:
+                break
+            try:
+                user = await app.get_users(int(user_idd))
+                await asyncio.sleep(0.8)
+            except Exception:
+                continue
+            first_name = user.first_name
+            if not first_name:
+                continue
+            username = user.username
+            msg += f"**{karma_count}**  {(first_name[0:12] + '...') if len(first_name) > 12 else first_name}  `{('@' + username) if username else user_idd}`\n"
+            limit += 1
+        await m.edit(msg)
+    else:
+        user_id = message.reply_to_message.from_user.id
+        karma = await get_karma(chat_id, await int_to_alpha(user_id))
+        karma = karma["karma"] if karma else 0
+        await message.reply_text(f"**Total Points**: __{karma}__")
+
+
+
 
 
 
