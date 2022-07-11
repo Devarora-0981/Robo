@@ -99,4 +99,26 @@ async def upvote(_, message):
         f"Incremented Karma of {user_mention} By 1 \nTotal Points: {karma}"
     )
 
+@app.on_message(
+    filters.text
+    & filters.group
+    & filters.incoming
+    & filters.reply
+    & filters.regex(regex_downvote)
+    & ~filters.via_bot
+    & ~filters.bot,
+    group=karma_negative_group,
+)
+@capture_err
+async def downvote(_, message):
+    if not is_karma_on(message.chat.id):
+        return
+    if not message.reply_to_message.from_user:
+        return
+    if not message.from_user:
+        return
+    if message.reply_to_message.from_user.id == message.from_user.id:
+        return
+
+
 
