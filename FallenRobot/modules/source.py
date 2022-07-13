@@ -7,30 +7,30 @@ from pyrogram import filters
 from FallenRobot import pbot as client
 
 
-ANON = "https://telegra.ph/file/7bd111132fce009e4605e.jpg"
+ANON = "https://telegra.ph/file/90552395a5e96d0e7fab9.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
 async def repo(client, message):
     await message.reply_photo(
         photo=ANON,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴢᴇɴ ✘ ʀᴏʙᴏᴛ-🇮](t.me/zenXRobot)**
+        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴢᴇɴ ✘ ʀᴏʙᴏᴛ-🇮🇳](t.me/zenxrobot)**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [ᴘʏᴛʜᴏɴXɢᴀᴍᴇʀ](tg://user?id=5374329015)
+**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [𝐀𝐃𝐈𝐓𝐘𝐀](t.me/pythonxgamer)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
 **» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
 
-**ᴢᴇɴ ✘ ʀᴏʙᴏᴛ sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
+**ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ sᴏᴜʀᴄᴇ ɪs ᴘʀɪᴠᴀᴛᴇ 🥺 sᴏʀʀʏ ʙᴜᴛ ᴜ ᴄᴀɴ ᴜsᴇ ᴢᴇɴ ʀᴏʙᴏᴛ ғᴏʀ ɢʀᴏᴜᴘs.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/pythonXgamer"),
+                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="t.me/devarora0981"),
                     InlineKeyboardButton(
-                        "• sᴏᴜʀᴄᴇ •",
-                        url="https://github.com/Adityakjha1/zentry",
+                        "• sᴜᴘᴘᴏʀᴛ •",
+                        url="https://t.me/zensupport",
                     ),
                 ]
             ]
@@ -39,3 +39,4 @@ async def repo(client, message):
 
 
 __mod_name__ = "Rᴇᴩᴏ"
+
