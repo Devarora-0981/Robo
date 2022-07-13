@@ -27,7 +27,7 @@ async def repo(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="t.me/devarora0981"),
+                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="t.me/pythonxgamer"),
                     InlineKeyboardButton(
                         "• sᴜᴘᴘᴏʀᴛ •",
                         url="https://t.me/zensupport",
