@@ -190,4 +190,25 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
     with open(ELEVATED_USERS_FILE, "r") as infile:
         data = json.load(infile)
 
+if user_id in DRAGONS:
+        rt += "This member is a Dragon Disaster, Demoting to Wolf."
+        data["sudos"].remove(user_id)
+        DRAGONS.remove(user_id)
+
+    if user_id in DEMONS:
+        rt += "This user is already a Demon Disaster, Demoting to Wolf."
+        data["supports"].remove(user_id)
+        DEMONS.remove(user_id)
+
+    if user_id in WOLVES:
+        message.reply_text("This user is already a Wolf Disaster.")
+        return ""
+
+    data["whitelists"].append(user_id)
+    WOLVES.append(user_id)
+
+    with open(ELEVATED_USERS_FILE, "w") as outfile:
+        json.dump(data, outfile, indent=4)
+
+
 
