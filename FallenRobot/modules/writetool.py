@@ -21,7 +21,6 @@ async def handwrite(_, message: Message):
         photo = req.history[1].url
         caption = f"""
 sᴜᴄᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
-
 ✨ **ᴡʀɪᴛᴛᴇɴ ʙʏ :** [{dispatcher.bot.first_name}](https://t.me/{dispatcher.bot.username})
 🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}
 ❄ **ʟɪɴᴋ :** `{photo}`
@@ -47,7 +46,6 @@ sᴜᴄᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
         photo = req.history[1].url
         caption = f"""
 sᴜᴄᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
-
 ✨ **ᴡʀɪᴛᴛᴇɴ ʙʏ :** [{dispatcher.bot.first_name}](https://t.me/{dispatcher.bot.username})
 🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}
 ❄ **ʟɪɴᴋ :** `{photo}`
@@ -66,8 +64,6 @@ sᴜᴄᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
 __mod_name__ = "WʀɪᴛᴇTᴏᴏʟ"
 
 __help__ = """
-
  Writes the given text on white page with a pen 🖊
-
 ❍ /write <text> *:* Writes the given text.
  """
