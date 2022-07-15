@@ -190,7 +190,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
     with open(ELEVATED_USERS_FILE, "r") as infile:
         data = json.load(infile)
 
-if user_id in DRAGONS:
+    if user_id in DRAGONS:
         rt += "This member is a Dragon Disaster, Demoting to Wolf."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
