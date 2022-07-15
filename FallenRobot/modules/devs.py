@@ -210,5 +210,16 @@ if user_id in DRAGONS:
     with open(ELEVATED_USERS_FILE, "w") as outfile:
         json.dump(data, outfile, indent=4)
 
+update.effective_message.reply_text(
+        rt + f"\nSuccessfully promoted {user_member.first_name} to a Wolf Disaster!"
+    )
+
+    log_message = (
+        f"#WHITELIST\n"
+        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))} \n"
+        f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+    )
+
+
 
 
