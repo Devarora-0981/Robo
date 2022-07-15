@@ -494,5 +494,61 @@ def tigerlist(update: Update, context: CallbackContext):
     m.edit_text(reply, parse_mode=ParseMode.HTML
 
 
+@run_async
+@whitelist_plus
+def supportlist(update: Update, context: CallbackContext):
+    bot = context.bot
+    m = update.effective_message.reply_text(
+        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+    )
+    reply = "<b>Known Demon Disasters 👹:</b>\n"
+    for each_user in DEMONS:
+        user_id = int(each_user)
+        try:
+            user = bot.get_chat(user_id)
+            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
+        except TelegramError:
+            pass
+    m.edit_text(reply, parse_mode=ParseMode.HTML)
+
+
+@run_async
+@whitelist_plus
+def sudolist(update: Update, context: CallbackContext):
+    bot = context.bot
+    m = update.effective_message.reply_text(
+        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+    )
+    true_sudo = list(set(DRAGONS) - set(DEV_USERS))
+    reply = "<b>Known Dragon Disasters 🐉:</b>\n"
+    for each_user in true_sudo:
+        user_id = int(each_user)
+        try:
+            user = bot.get_chat(user_id)
+            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
+        except TelegramError:
+            pass
+    m.edit_text(reply, parse_mode=ParseMode.HTML)
+
+
+@run_async
+@whitelist_plus
+def devlist(update: Update, context: CallbackContext):
+    bot = context.bot
+    m = update.effective_message.reply_text(
+        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+    )
+    true_dev = list(set(DEV_USERS) - {OWNER_ID})
+    reply = "<b>Hero Association Members ⚡️:</b>\n"
+    for each_user in true_dev:
+        user_id = int(each_user)
+        try:
+            user = bot.get_chat(user_id)
+            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
+        except TelegramError:
+            pass
+    m.edit_text(reply, parse_mode=ParseMode.HTML)
+
+
 
 
