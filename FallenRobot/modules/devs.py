@@ -220,6 +220,72 @@ update.effective_message.reply_text(
         f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
 
+    if chat.type != "private":
+        log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+    return log_message
+
+
+@run_async
+@sudo_plus
+@gloggable
+def addtiger(update: Update, context: CallbackContext) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+    rt = ""
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in DRAGONS:
+        rt += "This member is a Dragon Disaster, Demoting to Tiger."
+        data["sudos"].remove(user_id)
+        DRAGONS.remove(user_id)
+
+    if user_id in DEMONS:
+        rt += "This user is already a Demon Disaster, Demoting to Tiger."
+        data["supports"].remove(user_id)
+        DEMONS.remove(user_id)
+
+    if user_id in WOLVES:
+        rt += "This user is already a Wolf Disaster, Demoting to Tiger."
+        data["whitelists"].remove(user_id)
+        WOLVES.remove(user_id)
+
+    if user_id in TIGERS:
+        message.reply_text("This user is already a Tiger.")
+        return ""
+
+    data["tigers"].append(user_id)
+    TIGERS.append(user_id)
+
+    with open(ELEVATED_USERS_FILE, "w") as outfile:
+        json.dump(data, outfile, indent=4)
+
+    update.effective_message.reply_text(
+        rt + f"\nSuccessfully promoted {user_member.first_name} to a Tiger Disaster!"
+    )
+
+    log_message = (
+        f"#TIGER\n"
+        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))} \n"
+        f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+    )
+
+    if chat.type != "private":
+        log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+    return log_message
+
 
 
 
