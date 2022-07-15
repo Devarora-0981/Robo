@@ -373,5 +373,126 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return ""
 
 
+@run_async
+@sudo_plus
+@gloggable
+def removewhitelist(update: Update, context: CallbackContext) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in WOLVES:
+        message.reply_text("Demoting to normal user")
+        WOLVES.remove(user_id)
+        data["whitelists"].remove(user_id)
+
+        with open(ELEVATED_USERS_FILE, "w") as outfile:
+            json.dump(data, outfile, indent=4)
+
+        log_message = (
+            f"#UNWHITELIST\n"
+            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+        )
+
+        if chat.type != "private":
+            log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+        return log_message
+    else:
+        message.reply_text("This user is not a Wolf Disaster!")
+        return ""
+
+
+@run_async
+@sudo_plus
+@gloggable
+def removetiger(update: Update, context: CallbackContext) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in TIGERS:
+        message.reply_text("Demoting to normal user")
+        TIGERS.remove(user_id)
+        data["tigers"].remove(user_id)
+
+        with open(ELEVATED_USERS_FILE, "w") as outfile:
+            json.dump(data, outfile, indent=4)
+
+        log_message = (
+            f"#UNTIGER\n"
+            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+        )
+
+        if chat.type != "private":
+            log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+        return log_message
+    else:
+        message.reply_text("This user is not a Tiger Disaster!")
+        return ""
+
+
+@run_async
+@whitelist_plus
+def whitelistlist(update: Update, context: CallbackContext):
+    reply = "<b>Known Wolf Disasters 🐺:</b>\n"
+    m = update.effective_message.reply_text(
+        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+    )
+    bot = context.bot
+    for each_user in WOLVES:
+        user_id = int(each_user)
+        try:
+            user = bot.get_chat(user_id)
+
+            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
+        except TelegramError:
+            pass
+    m.edit_text(reply, parse_mode=ParseMode.HTML)
+
+
+@run_async
+@whitelist_plus
+def tigerlist(update: Update, context: CallbackContext):
+    reply = "<b>Known Tiger Disasters 🐯:</b>\n"
+    m = update.effective_message.reply_text(
+        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+    )
+    bot = context.bot
+    for each_user in TIGERS:
+        user_id = int(each_user)
+        try:
+            user = bot.get_chat(user_id)
+            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
+        except TelegramError:
+            pass
+    m.edit_text(reply, parse_mode=ParseMode.HTML
+
+
 
 
