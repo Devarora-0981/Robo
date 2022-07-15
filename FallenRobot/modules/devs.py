@@ -150,3 +150,22 @@ def addsupport(
 
     data["supports"].append(user_id)
     DEMONS.append(user_id)
+
+    with open(ELEVATED_USERS_FILE, "w") as outfile:
+        json.dump(data, outfile, indent=4)
+
+    update.effective_message.reply_text(
+        rt + f"\n{user_member.first_name} was added as a Demon Disaster!"
+    )
+
+    log_message = (
+        f"#SUPPORT\n"
+        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+    )
+
+    if chat.type != "private":
+        log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+    return log_message
+
