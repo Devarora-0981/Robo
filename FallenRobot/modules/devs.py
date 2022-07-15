@@ -75,3 +75,78 @@ def addsudo(update: Update, context: CallbackContext) -> str:
     if user_id in DRAGONS:
         message.reply_text("This member is already a Dragon Disaster")
         return ""
+
+    if user_id in DEMONS:
+        rt += "Requested HA to promote a Demon Disaster to Dragon."
+        data["supports"].remove(user_id)
+        DEMONS.remove(user_id)
+
+    if user_id in WOLVES:
+        rt += "Requested HA to promote a Wolf Disaster to Dragon."
+        data["whitelists"].remove(user_id)
+        WOLVES.remove(user_id)
+
+    data["sudos"].append(user_id)
+    DRAGONS.append(user_id)
+
+    with open(ELEVATED_USERS_FILE, "w") as outfile:
+        json.dump(data, outfile, indent=4)
+
+    update.effective_message.reply_text(
+        rt
+        + "\nSuccessfully set Disaster level of {} to Dragon!".format(
+            user_member.first_name
+        )
+    )
+
+    log_message = (
+        f"#SUDO\n"
+        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+    )
+
+    if chat.type != "private":
+        log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+    return log_message
+
+
+@run_async
+@sudo_plus
+@gloggable
+def addsupport(
+    update: Update,
+    context: CallbackContext,
+) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+    rt = ""
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in DRAGONS:
+        rt += "Requested HA to demote this Dragon to Demon"
+        data["sudos"].remove(user_id)
+        DRAGONS.remove(user_id)
+
+    if user_id in DEMONS:
+        message.reply_text("This user is already a Demon Disaster.")
+        return ""
+
+    if user_id in WOLVES:
+        rt += "Requested HA to promote this Wolf Disaster to Demon"
+        data["whitelists"].remove(user_id)
+        WOLVES.remove(user_id)
+
+    data["supports"].append(user_id)
+    DEMONS.append(user_id)
