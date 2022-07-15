@@ -287,5 +287,91 @@ def addtiger(update: Update, context: CallbackContext) -> str:
     return log_message
 
 
+@run_async
+@dev_plus
+@gloggable
+def removesudo(update: Update, context: CallbackContext) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in DRAGONS:
+        message.reply_text("Requested HA to demote this user to Civilian")
+        DRAGONS.remove(user_id)
+        data["sudos"].remove(user_id)
+
+        with open(ELEVATED_USERS_FILE, "w") as outfile:
+            json.dump(data, outfile, indent=4)
+
+        log_message = (
+            f"#UNSUDO\n"
+            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+        )
+
+        if chat.type != "private":
+            log_message = "<b>{}:</b>\n".format(html.escape(chat.title)) + log_message
+
+        return log_message
+
+    else:
+        message.reply_text("This user is not a Dragon Disaster!")
+        return ""
+
+
+@run_async
+@sudo_plus
+@gloggable
+def removesupport(update: Update, context: CallbackContext) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in DEMONS:
+        message.reply_text("Requested HA to demote this user to Civilian")
+        DEMONS.remove(user_id)
+        data["supports"].remove(user_id)
+
+        with open(ELEVATED_USERS_FILE, "w") as outfile:
+            json.dump(data, outfile, indent=4)
+
+        log_message = (
+            f"#UNSUPPORT\n"
+            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+        )
+
+        if chat.type != "private":
+            log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+        return log_message
+
+    else:
+        message.reply_text("This user is not a Demon level Disaster!")
+        return ""
+
+
 
 
