@@ -190,7 +190,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
     with open(ELEVATED_USERS_FILE, "r") as infile:
         data = json.load(infile)
 
-    if user_id in DRAGONS:
+if user_id in DRAGONS:
         rt += "This member is a Dragon Disaster, Demoting to Wolf."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
@@ -210,7 +210,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
     with open(ELEVATED_USERS_FILE, "w") as outfile:
         json.dump(data, outfile, indent=4)
 
-    update.effective_message.reply_text(
+update.effective_message.reply_text(
         rt + f"\nSuccessfully promoted {user_member.first_name} to a Wolf Disaster!"
     )
 
@@ -491,7 +491,7 @@ def tigerlist(update: Update, context: CallbackContext):
             reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
         except TelegramError:
             pass
-    m.edit_text(reply, parse_mode=ParseMode.HTML)
+    m.edit_text(reply, parse_mode=ParseMode.HTML
 
 
 @run_async
@@ -554,7 +554,6 @@ __help__ = f"""
 *⚠️ Notice:*
 Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
 Group admins/group owners do not need these commands. 
-
 *List all special users:*
  ❍ /dragons*:* Lists all Dragon disasters
  ❍ /demons*:* Lists all Demon disasters
@@ -566,49 +565,40 @@ Group admins/group owners do not need these commands.
  ❍ /addtiger*:* Adds a user to Tiger
  ❍ /addwolf*:* Adds a user to Wolf
  ❍ `Add dev doesnt exist, devs should know how to add themselves`
-
 *Ping:*
  ❍ /ping*:* gets ping time of bot to telegram server
  ❍ /pingall*:* gets all listed ping times
-
 *Broadcast: (Bot owner only)*
 *Note:* This supports basic markdown
  ❍ /broadcastall*:* Broadcasts everywhere
  ❍ /broadcastusers*:* Broadcasts too all users
  ❍ /broadcastgroups*:* Broadcasts too all groups
-
 *Groups Info:*
  ❍ /groups*:* List the groups with Name, ID, members count as a txt
  ❍ /leave <ID>*:* Leave the group, ID must have hyphen
  ❍ /stats*:* Shows overall bot stats
  ❍ /getchats*:* Gets a list of group names the user has been seen in. Bot owner only
  ❍ /ginfo username/link/ID*:* Pulls info panel for entire group
-
 *Access control:* 
  ❍ /ignore*:* Blacklists a user from using the bot entirely
  ❍ /lockdown <off/on>*:* Toggles bot adding to groups
  ❍ /notice*:* Removes user from blacklist
  ❍ /ignoredlist*:* Lists ignored users
-
 *Speedtest:*
  ❍ /speedtest*:* Runs a speedtest and gives you 2 options to choose from, text or image output
-
 *Module loading:*
  ❍ /listmodules*:* Lists names of all modules
  ❍ /load modulename*:* Loads the said module to memory without restarting.
  ❍ /unload modulename*:* Loads the said module frommemory without restarting memory without restarting the bot 
-
 *Remote commands:*
  ❍ /rban*:* user group*:* Remote ban
  ❍ /runban*:* user group*:* Remote un-ban
  ❍ /rpunch*:* user group*:* Remote punch
  ❍ /rmute*:* user group*:* Remote mute
  ❍ /runmute*:* user group*:* Remote un-mute
-
 *Windows self hosted only:*
  ❍ /reboot*:* Restarts the bots service
  ❍ /gitpull*:* Pulls the repo and then restarts the bots service
-
 *Chatbot:* 
  ❍ /listaichats*:* Lists the chats the chatmode is enabled in
  
@@ -626,16 +616,13 @@ Group admins/group owners do not need these commands.
  ❍ /gban <id> <reason>*:* Gbans the user, works by reply too
  ❍ /ungban*:* Ungbans the user, same usage as gban
  ❍ /gbanlist*:* Outputs a list of gbanned users
-
 *Global Blue Text*
  ❍ /gignoreblue*:* <word>*:* Globally ignore bluetext cleaning of saved word across Anonymous Robot.
  ❍ /ungignoreblue*:* <word>*:* Remove said command from global cleaning list
-
 *Masha Core*
 *Owner only*
  ❍ /send*:* <module name>*:* Send module
  ❍ /install*:* <reply to a .py>*:* Install module 
-
 *Heroku Settings*
 *Owner only*
  ❍ /usage*:* Check your heroku dyno hours remaining.
@@ -643,7 +630,6 @@ Group admins/group owners do not need these commands.
  ❍ /set var <newvar> <vavariable>*:* Add new variable or update existing value variable.
  ❍ /del var <var>*:* Delete existing variable.
  ❍ /logs Get heroku dyno logs.
-
 `⚠️ Read from top`
 Visit @{SUPPORT_CHAT} for more information.
 """
@@ -678,6 +664,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
+__mod_name__ = "Devs​"
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,
@@ -693,3 +680,7 @@ __handlers__ = [
     SUDOLIST_HANDLER,
     DEVLIST_HANDLER,
 ]
+
+
+
+
