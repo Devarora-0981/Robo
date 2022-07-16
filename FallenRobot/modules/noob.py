@@ -1,7 +1,7 @@
 # ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1M
-#     MY ALL BOTS :- Abishnoi_bots
-#     GITHUB :- KingAbishnoi ""
+# TG :- @Devarora0981
+#     MY ALL BOTS :- @Dev_Botz
+#    Creditz :- KingAbishnoi ""
 
 
 
@@ -18,19 +18,19 @@ from telegram.ext import Filters
 
 from FallenRobot import pbot as bot
 
-ABISHNOI = "https://telegra.ph/file/348fd99cf32b44153f5c1.jpg"
+ABISHNOI = "https://telegra.ph/file/5bd8c3e17d702b91f8066.jpg"
 
 
-@bot.on_message(filters.command(["noob", "owner"]))
+@bot.on_message(filters.command(["noob", "owner", "chutiya"]))
 async def repo(client, message):
     await message.reply_photo(
         photo=ABISHNOI, #don't change
-        caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」](t.me/Abishnoi_ro_bot)**
+        caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』](t.me/dev_managerbot)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/Abishnoi1M"),
+                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/Devarora0981"),
                 ]
             ]
         ),
