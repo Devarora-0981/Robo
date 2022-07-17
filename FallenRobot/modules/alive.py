@@ -8,6 +8,7 @@ from pyrogram import filters, __version__ as pver
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telethon import __version__ as tver
 from telegram import __version__ as lver
+from telethon import events
 from platform import python_version as pyver
 from FallenRobot import BOT_USERNAME, OWNER_USERNAME, SUPPORT_CHAT, pbot
 
