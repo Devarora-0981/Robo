@@ -56,8 +56,8 @@ async def restart(client, m: Message):
     await asyncio.sleep(2)
     await m.reply_photo(
         lol,
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
-        ━━━━━━━━━━━━━━━━━━━
+        caption=f"""**ʜᴇʏ [{event.sender.first_name}](tg://user?id={event.sender.id}), ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
+   ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐃𝐄𝐕](https://t.me/{OWNER_USERNAME})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
@@ -67,6 +67,6 @@ async def restart(client, m: Message):
   » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
   
   » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
-        ━━━━━━━━━━━━━━━━━━━""",
+   ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(SHREYXD),
     )
