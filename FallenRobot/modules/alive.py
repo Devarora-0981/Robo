@@ -8,6 +8,7 @@ from pyrogram import filters, __version__ as pver
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telethon import __version__ as tver
 from telegram import __version__ as lver
+from telethon import events
 from platform import python_version as pyver
 from FallenRobot import BOT_USERNAME, OWNER_USERNAME, SUPPORT_CHAT, pbot
 
@@ -56,8 +57,8 @@ async def restart(client, m: Message):
     await asyncio.sleep(2)
     await m.reply_photo(
         lol,
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
-        ━━━━━━━━━━━━━━━━━━━
+        caption=f"""**ʜᴇʏ [{event.sender.first_name}](tg://user?id={event.sender.id}), ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
+   ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐃𝐄𝐕](https://t.me/{OWNER_USERNAME})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
@@ -67,6 +68,6 @@ async def restart(client, m: Message):
   » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
   
   » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
-        ━━━━━━━━━━━━━━━━━━━""",
+   ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(SHREYXD),
     )
