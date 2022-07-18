@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ,\n {update.effective_user.first_name}\n*{} [!](https://telegra.ph/file/5016edf459aae053479cf.jpg)\n\n *ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ʟᴀɢ-ғʀᴇᴇ ᴍᴜsɪᴄ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\n ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ\nꜰᴏʀ ɢᴇᴛᴛɪɴɢ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ /help\n *ᴘʀᴇss* /mstart *ғᴏʀ sᴛᴀʀᴛɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ.*
+*ʜᴇʏ `{}`,\n \n*{} [!](https://telegra.ph/file/5016edf459aae053479cf.jpg)\n\n *ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ʟᴀɢ-ғʀᴇᴇ ᴍᴜsɪᴄ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\n ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ\nꜰᴏʀ ɢᴇᴛᴛɪɴɢ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ /help\n *ᴘʀᴇss* /mstart *ғᴏʀ sᴛᴀʀᴛɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ.*
 
 """
 
@@ -177,6 +177,7 @@ def test(update: Update, context: CallbackContext):
 @run_async
 def start(update: Update, context: CallbackContext):
     args = context.args
+    usr = update.effective_user
     uptime = get_readable_time((time.time() - StartTime))
     if update.effective_chat.type == "private":
         if len(args) >= 1:
@@ -208,7 +209,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_message.reply_text(
-                PM_START_TEXT.format(dispatcher.bot.first_name),
+                PM_START_TEXT.format(usr.first_name, dispatcher.bot.first_name),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
