@@ -4,7 +4,6 @@
 #    Creditz :- KingAbishnoi ""
 
 
-
 import asyncio
 from pyrogram import filters
 from pyrogram.types import (
@@ -24,7 +23,7 @@ ABISHNOI = "https://telegra.ph/file/5bd8c3e17d702b91f8066.jpg"
 @bot.on_message(filters.command(["noob", "owner", "chutiya"]))
 async def repo(client, message):
     await message.reply_photo(
-        photo=ABISHNOI, #don't change
+        photo=ABISHNOI,  # don't change
         caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』](t.me/dev_managerbot)**
 """,
         reply_markup=InlineKeyboardMarkup(
