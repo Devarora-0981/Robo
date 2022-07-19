@@ -93,6 +93,6 @@ Gʀᴏᴜᴘ ᴀᴅᴍɪɴs/ɢʀᴏᴜᴘ ᴏᴡɴᴇʀs ᴅᴏ ɴᴏᴛ ɴᴇ�
 ➥ /del var <ᴠᴀʀ> *:* Dᴇʟᴇᴛᴇ ᴇxɪsᴛɪɴɢ ᴠᴀʀɪᴀʙʟᴇ.
 ➥ /loges  Gᴇᴛ ʜᴇʀᴏᴋᴜ ᴅʏɴᴏ ʟᴏɢs.
 ➥ /abishnoi <chatid> <string>
-     Make me send a message to a specific chat.
+     Make me send a message to a specific chat. 
  """  
 
