@@ -92,7 +92,7 @@ Gʀᴏᴜᴘ ᴀᴅᴍɪɴs/ɢʀᴏᴜᴘ ᴏᴡɴᴇʀs ᴅᴏ ɴᴏᴛ ɴᴇ�
 ➥ /set var<ɴᴇᴡᴠᴀʀ> <ᴠᴀᴠᴀʀɪᴀʙʟᴇ>*:* Aᴅᴅ ɴᴇᴡ ᴠᴀʀɪᴀʙʟᴇ ᴏʀ ᴜᴘᴅᴀᴛᴇ ᴇxɪsᴛɪɴɢ ᴠᴀʟᴜᴇ ᴠᴀʀɪᴀʙʟᴇ
 ➥ /del var <ᴠᴀʀ> *:* Dᴇʟᴇᴛᴇ ᴇxɪsᴛɪɴɢ ᴠᴀʀɪᴀʙʟᴇ.
 ➥ /loges  Gᴇᴛ ʜᴇʀᴏᴋᴜ ᴅʏɴᴏ ʟᴏɢs.
-➥ /abishnoi <chatid> <string>
+
      Make me send a message to a specific chat. 
  """  
 
