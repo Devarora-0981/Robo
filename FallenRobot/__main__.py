@@ -350,6 +350,7 @@ def help_button(update, context):
 @run_async
 def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
+    usr = update.effective_user
     if query.data == "fallen_":
         query.message.edit_text(
             text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
@@ -419,7 +420,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "fallen_back":
         query.message.edit_text(
-            PM_START_TEXT.format(dispatcher.bot.first_name),
+            PM_START_TEXT.format(usr.first_name, dispatcher.bot.first_name),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
