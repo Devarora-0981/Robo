@@ -209,7 +209,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_message.reply_text(
-                PM_START_TEXT.format(dispatcher.bot.first_name),
+                PM_START_TEXT.format(dispatcher.bot.first_name, uptime),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -350,6 +350,7 @@ def help_button(update, context):
 @run_async
 def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
+    uptime = get_readable_time((time.time() - StartTime))
     if query.data == "fallen_":
         query.message.edit_text(
             text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
@@ -419,7 +420,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "fallen_back":
         query.message.edit_text(
-            PM_START_TEXT.format(dispatcher.bot.first_name),
+            PM_START_TEXT.format(dispatcher.bot.first_name, uptime),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
