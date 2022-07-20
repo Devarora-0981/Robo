@@ -28,6 +28,7 @@ from FallenRobot import (
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from FallenRobot.modules import ALL_MODULES
+import FallenRobot.modules.sql.users_sql as sql
 from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
 from FallenRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
@@ -76,8 +77,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ,\n๏ ᴛʜɪs ɪs ᴢᴇɴ ʙᴏᴛ~🇮🇳,💫* [!](https://te.legra.ph/file/1e58e841e9ebbd30985a8.jpg)\n*๏ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs*\n──────────────────────\n*๏ ᴀᴅᴅ ᴢᴇɴ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ғᴜʟʟ ʀɪɢʜᴛs.\n───────────\n*"""
-
+ʜᴇʏ,
+✪ ᴛʜɪs ɪs {} !
+✪ ᴍᴏᴅᴜʟᴀʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ
+────────────────────────
+➻ ᴜsᴇʀs » {}
+➻ ᴄʜᴀᴛs » {}
+➻ ᴜᴘᴛɪᴍᴇ » {}
+────────────────────────
+✪ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.
+​"""
 
 buttons = [
     [
@@ -208,8 +217,9 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            uptime = get_readable_time((time.time() - StartTime))
             update.effective_message.reply_text(
-                PM_START_TEXT.format(dispatcher.bot.first_name, uptime),
+                PM_START_TEXT.format(dispatcher.bot.first_name, sql.num_users(), sql.num_chats(), uptime),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -419,8 +429,9 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "fallen_back":
+        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            PM_START_TEXT.format(dispatcher.bot.first_name, uptime),
+            PM_START_TEXT.format(dispatcher.bot.first_name, sql.num_users(), sql.num_chats(), uptime),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
@@ -441,8 +452,9 @@ def Source_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "source_back":
+        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            PM_START_TEXT.format(dispatcher.bot.first_name),
+            PM_START_TEXT.format(dispatcher.bot.first_name, sql.num_users(), sql.num_chats(), uptime),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
