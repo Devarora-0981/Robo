@@ -1,7 +1,7 @@
 import random
 import asyncio
 from pyrogram import filters
-from scenario import pgram as fallen
+from fallen import pgram as fallen
 
 
 
