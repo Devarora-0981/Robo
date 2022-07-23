@@ -31,7 +31,7 @@ async def repo(client, message):
                     InlineKeyboardButton(
                         "• sᴜᴘᴘᴏʀᴛ •",
                         url="https://t.me/zensupport",
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ ɢɪᴛʜᴜʙ •", url="www.github.com/Adityakjha1"),
+
                     ),
                 ]
             ]
