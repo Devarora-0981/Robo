@@ -33,11 +33,10 @@ async def repo(client, message):
                         "• sᴜᴘᴘʀᴛ •",
                         url="https://t.me/zensupport"
                     ),
-                ]
-
+                ],
                 [
                     InlineKeyboardButton("• sᴛᴀʀᴛ •", url="https://t.me/ZenXrobot?startgroup=true"),     
-                ]
+                ],
             ]
         ),
     )
