@@ -27,15 +27,15 @@ async def repo(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/pythonxgamer"
+                    InlineKeyboardButton("•👑 ᴏᴡɴᴇʀ ʟᴇɢᴇɴᴅ 👑•", url="https://t.me/pythonxgamer"
                     ),
                     InlineKeyboardButton(
-                        "• sᴜᴘᴘʀᴛ •",
+                        "•💚sᴜᴘᴘᴏʀᴛ💚•",
                         url="https://t.me/zensupport"
                     ),
                 ],
                 [
-                    InlineKeyboardButton("• sᴛᴀʀᴛ •", url="https://t.me/ZenXrobot?startgroup=true"),     
+                    InlineKeyboardButton("• ➕ ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ➕ •", url="https://t.me/ZenXrobot?startgroup=true"),     
                 ],
             ]
         ),
