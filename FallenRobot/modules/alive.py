@@ -32,7 +32,7 @@ SHREYXD = [
     ],
 ]
 
-lol = "https://telegra.ph/file/b66e1dd4dd58fc0a3931c.jpg"
+lol = "https://telegra.ph/file/0820acefbb082356a19cb.mp4"
 
 
 @pbot.on_message(filters.command("alive"))
