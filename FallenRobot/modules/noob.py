@@ -17,7 +17,7 @@ from telegram.ext import Filters
 
 from FallenRobot import pbot as bot
 
-ABISHNOI = "https://telegra.ph/file/5bd8c3e17d702b91f8066.jpg"
+ABISHNOI = "https://telegra.ph/file/0820acefbb082356a19cb.mp4"
 
 
 @bot.on_message(filters.command(["noob", "owner", "chutiya"]))
