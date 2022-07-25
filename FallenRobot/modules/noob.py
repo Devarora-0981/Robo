@@ -31,7 +31,7 @@ from pyrogram.types import (
 
 from FallenRobot import pbot as bot
 
-Zen = "https://te.legra.ph/file/49b0000f95b740904aeaa.jpg"
+Zen = "https://telegra.ph/file/29dfe5718ac9653c14efd.mp4"
 
 
 @bot.on_message(filters.command(["noob", "owner"]))
