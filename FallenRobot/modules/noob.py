@@ -1,7 +1,7 @@
 # ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
 # TG :- @Devarora0981
-#     MY ALL BOTS :- @Dev_Botz
-#    Creditz :- KingAbishnoi ""
+# TG :- @PythonXgamer
+# Creditz :- KingAbishnoi ""
 
 
 import asyncio
@@ -23,7 +23,7 @@ ABISHNOI = "https://telegra.ph/file/0820acefbb082356a19cb.mp4"
 @bot.on_message(filters.command(["noob", "owner", "chutiya"]))
 async def repo(client, message):
     await message.reply_animation(
-        photo=ABISHNOI,  # don't change
+        animation=ABISHNOI,  # don't change
         caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』](t.me/dev_managerbot)**
 """,
         reply_markup=InlineKeyboardMarkup(
