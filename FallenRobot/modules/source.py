@@ -7,13 +7,13 @@ from pyrogram import filters
 from FallenRobot import pbot as client
 
 
-ANON = "https://telegra.ph/file/26aec6d41ffd788f624d9.jpg"
+DEV = "https://telegra.ph/file/26aec6d41ffd788f624d9.jpg"
 
 
 @client.on_message(filters.command(["repo", "source", "gand"]))
 async def repo(client, message):
-    await message.reply_photo(
-        photo=ANON,
+    await message.reply_animation(
+        animation=DEV,
         caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ-🇮🇳](t.me/dev_managerbot)**
 
 **» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [𝐃𝐄𝐕](t.me/devarora0981)
