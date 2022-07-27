@@ -10,7 +10,7 @@
 </p>
 ━━━━━━━━━━━━━━━━━━━━━━
 <p align="center">
-<p align="center"><a href="https://t.me/Abishnoi1M"><img src="https://telegra.ph/file/178d8dd843c089cd8cdb4.gif" width="350"></a></p>
+<p align="center"><a href="https://t.me/Dev_Arora_0981"><img src="https://telegra.ph/file/178d8dd843c089cd8cdb4.gif" width="250"></a></p>
 
 ## ㅤㅤ 🖤ᴅᴇᴠ ʀᴏʙᴏᴛ🖤
 ɪ ᴀᴍ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [💞ᴅᴇᴠ ʀᴏʙᴏᴛ​💞](https://t.me/Dev_managerBot)
