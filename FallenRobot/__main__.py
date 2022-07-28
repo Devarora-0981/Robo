@@ -208,8 +208,14 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_sticker(
+                "CAACAgEAAx0CUgguZAACtIBi4j3MvfpItRJJ1jLbR5ll8oFLSAACwAIAAnyUAUXer070hvNBFSkE"
+            )
             update.effective_message.reply_text(
-                PM_START_TEXT.format(usr.first_name, dispatcher.bot.first_name),
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), dispatcher.bot.first_name
+                ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
