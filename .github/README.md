@@ -5,7 +5,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://te.legra.ph/file/49b0000f95b740904aeaa.jpg">
+  <img src="https://telegra.ph/file/90552395a5e96d0e7fab9.jpg">
 </p>
 
 _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ᴢᴇɴ ✘ ʀᴏʙᴏᴛ](https://t.me/zenXRobot)**_
@@ -25,7 +25,7 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ᴢᴇɴ ✘ ʀᴏ�
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-  <img src="https://te.legra.ph/file/69a14dfc3e19027734d10.jpg">
+  <img src="https://telegra.ph/file/90552395a5e96d0e7fab9.jpg">
 </p>
 
 <p align="center">
