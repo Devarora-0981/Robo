@@ -1,24 +1,4 @@
 
-
-# Dear Pro  , Don't Remove This Line
-# Tg Abishnoi1M
-# My Bots :- @Abishnoi_bots
-#Github :- KingAbishnoi
-
-
-
-
-
-
-
-
-# abishnoi help zen robot 
-# Tg @pythonxgamer
-# zen bot @zenxrobot
-#Github :- Adityakjha1
-
-
-
 import asyncio
 from pyrogram import filters
 from pyrogram.types import (
