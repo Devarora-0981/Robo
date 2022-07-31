@@ -22,7 +22,7 @@ jobs:
           body: Automated code formatting.
           labels: Formatted by Black
           branch: Autofixes
-          committer: AnonymousR1025 <102808014+AnonymousR1025@users.noreply.github.com>
+          committer: Adityakjha1 <102808014+Adityakjha1@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: true
           delete-branch: true
