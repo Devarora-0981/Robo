@@ -42,7 +42,7 @@ ROMANTIC_STRINGS = [
 @FallenRobot.on_message(filters.command("romantic"))
 async def lel(bot, message):
     ran = random.choice(ROMANTIC_STRINGS)
-    await bot.send_chat_action(message.chat.id, "Typing....")
+    await bot.send_chat_action(message.chat.id, "Typing")
     await asyncio.sleep(1.5)
     return await message.reply_text(text=ran)
 
