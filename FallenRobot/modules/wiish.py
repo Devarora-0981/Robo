@@ -20,7 +20,6 @@ WISH_STRINGS = [
                ]
 
 
-
 @FallenRobot.on_message(filters.command(["rakshabandhan", "rakhi"]))
 async def lel(bot, message):
     ran = random.choice(WISH_STRINGS)
@@ -28,9 +27,12 @@ async def lel(bot, message):
     await asyncio.sleep(1)
     return await message.reply_text(text=ran)
 
-__mod_name__ = "RAKSHABANDHAN"
+__mod_name__ = "ʀᴀᴋsʜᴀʙᴀɴᴅʜᴀɴ"
 
 __help__ = """
+
 *ᴍᴀᴋᴇs ᴀ ʀᴀᴋsʜᴀʙᴀɴᴅʜᴀɴ ǫᴜᴏᴛᴇ ғᴏʀ ᴜʀ sɪsᴛᴇʀ & ʙʀᴏᴛʜᴇʀ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
+
 ❍ /rakhi *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ sɪsᴛᴇʀ.* \n\n ❍ /rakshabandhan *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ʙʀᴏᴛʜᴇʀ!!.* \n\n [🥀Support Chat🥀](t.me/we_rfriends)
+
  """
