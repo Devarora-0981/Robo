@@ -27,7 +27,7 @@ async def lel(bot, message):
     await asyncio.sleep(1)
     return await message.reply_text(text=ran)
 
-__mod_name__ = "ʀᴀᴋsʜᴀʙᴀɴᴅʜᴀɴ"
+__mod_name__ = "ʀᴀᴋʜɪ"
 
 __help__ = """
 
