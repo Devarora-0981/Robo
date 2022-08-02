@@ -14,8 +14,6 @@ WISH_STRINGS = [
                 "You are the only person who supports me in my hard times; you are the one who shakes a leg with me in my happiness. There was no single day in my life when you weren't there. I really love you my big brother.",
                 "You supported me while I was in distress; you protected me when I was scared and all other things you did to make me happy. Thanks are just insufficient to express my gratitude. Happy Raksha Bandhan to you Brother!",
                 "Dearest sister, this Raksha Bandhan, I promise to always be your savior and will always be by your side no matter what. Sending loads of blessings and gifts just for you!",
-                "This holy thread you tie on my wrist will strengthen our bond more and fills my heart with more love for you. You are the best sis in the world!
-Happy Raksha Bandhan!",
                 "May god bless my angelic sister with loads of happiness, health and success. Happy Raksha Bandhan.",
                 "I wait for the day throughout the year to see you tie a Rakhi so religiously on my wrist and pray to God for my well-being. Sweetest Sis, I wish our bond grows stronger day by day...",
                 "To have an affectionate relationship with a sister is not just to have a friend or a confidant -- it is to have a companion for life."
