@@ -43,7 +43,7 @@ ROMANTIC_STRINGS = [
 async def lel(bot, message):
     ran = random.choice(ROMANTIC_STRINGS)
     await bot.send_chat_action(message.chat.id, "Typing")
-    await asyncio.sleep(1.5)
+    await asyncio.sleep(1)
     return await message.reply_text(text=ran)
 
 __mod_name__ = "sʜᴀʏᴀʀɪ"
