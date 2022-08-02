@@ -16,3 +16,19 @@ INDIAN_STRINGS = [
                  ]
 
 
+@FallenRobot.on_message(filters.command(["india", "indian"]))
+async def lel(bot, message):
+    ran = random.choice(INDIAN_STRINGS)
+    await bot.send_chat_action(message.chat.id, "Typing")
+    await asyncio.sleep(0.5)
+    return await message.reply_text(text=ran)
+
+__mod_name__ = "ɪɴᴅɪᴀ"
+
+__help__ = """
+
+*ᴍᴀᴋᴇs ᴀ ɪɴᴅᴇᴘᴇɴᴅᴇɴᴄᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜ.* \n\n *ᴘʀᴏᴜᴅ ᴛᴏ ʙᴇ ɪɴᴅɪᴀɴ.* 🇮🇳
+
+❍ /india *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜ.* \n\n ❍ /indian *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜ!!.* \n\n [🥀Support Chat🥀](t.me/we_rfriends)
+
+ """
