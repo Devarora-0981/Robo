@@ -50,7 +50,7 @@ async def restart(client, m: Message):
     )
     await umm.delete()
     await asyncio.sleep(2)
-    await m.reply_animation(
+    await m.reply_video(
         random.choice(PHOTO),
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
    ━━━━━━━━━━━━━━━━━━━
