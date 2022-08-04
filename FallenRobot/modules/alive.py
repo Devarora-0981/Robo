@@ -12,11 +12,10 @@ from platform import python_version as pyver
 from FallenRobot import BOT_USERNAME, OWNER_USERNAME, SUPPORT_CHAT, pbot
 
 PHOTO = [
-    "https://telegra.ph/file/47f1c6b57321808e9eb61.jpg",
-    "https://telegra.ph/file/d2433e011fb8eff1650f8.mp4",
-    "https://telegra.ph/file/4af05a90d3058915d20e6.jpg",
-    "https://telegra.ph/file/a0a79755bc3336f47a30b.jpg",
-    "https://telegra.ph/file/c35acfb3cd4699c7a9e2c.jpg",
+    "https://telegra.ph/file/0820acefbb082356a19cb.mp4",
+    "https://telegra.ph/file/0754888f74366d4bd9fbd.mp4",
+    "https://telegra.ph/file/0754888f74366d4bd9fbd.mp4",
+    "https://telegra.ph/file/c323263a1746930124792.mp4",
 ]
 
 SHREYXD = [
@@ -31,9 +30,6 @@ SHREYXD = [
         ),
     ],
 ]
-
-lol = "https://telegra.ph/file/0820acefbb082356a19cb.mp4"
-
 
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
@@ -55,7 +51,7 @@ async def restart(client, m: Message):
     await umm.delete()
     await asyncio.sleep(2)
     await m.reply_animation(
-        lol,
+        random.choice(PHOTO),
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
    ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐃𝐄𝐕](https://t.me/{OWNER_USERNAME})
