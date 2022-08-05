@@ -51,7 +51,7 @@ async def restart(client, m: Message):
     await umm.delete()
     await asyncio.sleep(2.5)
     await m.reply_video(
-        random.choice(PHOTO),
+        video = random.choice(PHOTO),
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
    ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐃𝐄𝐕](https://t.me/{OWNER_USERNAME})
