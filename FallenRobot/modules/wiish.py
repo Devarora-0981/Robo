@@ -18,3 +18,21 @@ WISH_STRINGS = [
                 "I wait for the day throughout the year to see you tie a Rakhi so religiously on my wrist and pray to God for my well-being. Sweetest Sis, I wish our bond grows stronger day by day...",
                 "To have an affectionate relationship with a sister is not just to have a friend or a confidant -- it is to have a companion for life."
                ]
+
+
+@FallenRobot.on_message(filters.command(["rakshabandhan", "rakhi"]))
+async def lel(bot, message):
+    ran = random.choice(WISH_STRINGS)
+    await bot.send_chat_action(message.chat.id, "Typing")
+    await asyncio.sleep(1)
+    return await message.reply_text(text=ran)
+
+__mod_name__ = "ʀᴀᴋʜɪ"
+
+__help__ = """
+
+*ᴍᴀᴋᴇs ᴀ ʀᴀᴋsʜᴀʙᴀɴᴅʜᴀɴ ǫᴜᴏᴛᴇ ғᴏʀ ᴜʀ sɪsᴛᴇʀ & ʙʀᴏᴛʜᴇʀ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
+
+❍ /rakhi *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ sɪsᴛᴇʀ.* \n\n ❍ /rakshabandhan *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ʙʀᴏᴛʜᴇʀ!!.* \n\n [🥀Support Chat🥀](t.me/we_rfriends)
+
+ """
