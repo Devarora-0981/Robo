@@ -24,7 +24,8 @@ jikanpy
 speedtest-cli
 regex
 bleach
-git+https://github.com/starry69/python-markdown2.git
+git+https://github.com/trentm/python-markdown2.git
+
 wikipedia
 telethon
 telegraph
