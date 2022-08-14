@@ -255,7 +255,7 @@ async def lego(event):
     quew = event.pattern_match.group(1)
     if event.sender_id != OWNER_ID and not quew:
         await event.reply(
-            "`ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙʏ​ !`\n`Example /logo <ADITYAKJHA>`"
+            "`ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙʏ​ !`\n`Example /logo <DEV>`"
         )
         return
     pesan = await event.reply("**ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ʟᴏɢᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ sᴇᴄ​...**")
@@ -288,19 +288,19 @@ async def lego(event):
         fname = "fallen.png"
         img.save(fname, "png")
         await telethn.send_file(
-            event.chat_id, file=fname, caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ zᴇɴ ✘ ʀᴏʙᴏᴛ\nRequested By:- [{event.sender.first_name}](tg://user?id={event.sender.id})\nCreated By: [『 𝙕𝙀𝙉 ✘ 𝙍𝙊𝘽𝙊𝙏 』](https://t.me/ZenXrobot)"
+            event.chat_id, file=fname, caption=f"☟︎︎︎ ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ☟︎︎︎\n☞︎︎︎ [ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ](t.me/dev_managerbot) ☜︎︎︎\nʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:- [{event.sender.first_name}](tg://user?id={event.sender.id})\nsᴜᴘᴘʀᴛ ᴄʜᴀᴛ:- @wE_RfRiEnDs"
         )
         await pesan.delete()
         if os.path.exists(fname):
             os.remove(fname)
     except Exception as e:
-        await event.reply(f"ғʟᴏᴏᴅᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @zensupport")
+        await event.reply(f"ғʟᴏᴏᴅᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @wE_rFrIeNdS")
 
 
 __mod_name__ = "Lᴏɢᴏ​"
 
 __help__ = """
-Zen Robot can create some beautiful and attractive logo for your profile pics.
+Dev Robot can create some beautiful and attractive logo for your profile pics.
 
 ❍ /logo (Text) *:* Create a logo of your given text with random view.
 """
