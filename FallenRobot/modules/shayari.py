@@ -14,7 +14,7 @@ ROMANTIC_STRINGS = [
                      'Tera pata nahi par mera dil kabhi taiyar nahi hoga\nmujhe tere alawa kabi kisi aur se pyaar nhi hoga...\n',
                      'Lga ke phool haathon se usne kaha chupke se\nagar yaha koi nahi hota to phool ki jagah tum hote...\n',
                      'Jab Dhadkano Ko Tham Leta Hai Koi\nJab Khayalo Mein Naam Hamara Leta Hai koi,\nYaade Tab aur Yaadgar Ban Jaati Hai,\nJab Hume Humse Behtar Jaan Leta Hai Koi.\n',
-                     'Love is not what the mind thinks, but what the heart feels \n',
+                     'Kareeb Aao To Shayad Hame Samjh Loge Ye Duriya To Kewal Fasle Bdhati Hai \n',
                      'You Smile When You Happy I Smile When I See You Happy.\n',
                      'Never Forget About The Ones That Love You Back \n',
                      'Loving The Right Person Will Make You The Strongest And The Most Confident Person.\n',
@@ -52,6 +52,6 @@ __help__ = """
 
 *ᴍᴀᴋᴇs ᴀ sʜᴀʏᴀʀɪ ғᴏʀ ᴜʀ ɢɪʀʟғʀɪᴇɴᴅ & ʙᴏʏғʀɪᴇɴᴅ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
 
-❍ /romantic *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n ❍ /shayari *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n [🥀Support Chat🥀](t.me/we_rfriends)
+❍ /romantic *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n ❍ /shayari *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n [🥀Support Chat🥀](t.me/Mahakal_Support)
 
  """
