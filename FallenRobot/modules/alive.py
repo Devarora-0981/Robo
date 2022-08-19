@@ -12,7 +12,7 @@ from platform import python_version as pyver
 from FallenRobot import BOT_USERNAME, OWNER_USERNAME, SUPPORT_CHAT, pbot
 
 PHOTO = [
-    "https://telegra.ph/file/0820acefbb082356a19cb.mp4",
+    "https://telegra.ph/file/51582c9510773813eba8e.jpg",
     "https://telegra.ph/file/0754888f74366d4bd9fbd.mp4",
     "https://telegra.ph/file/0754888f74366d4bd9fbd.mp4",
     "https://telegra.ph/file/c323263a1746930124792.mp4",
@@ -20,13 +20,13 @@ PHOTO = [
 
 SHREYXD = [
     [
-        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Devarora0981"),
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/STD_KING"),
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-            url=f"https://t.me/Dev_ManagerBot?startgroup=true",
+            url=f"https://t.me/MahakalRobot?startgroup=true",
         ),
     ],
 ]
@@ -52,9 +52,9 @@ async def restart(client, m: Message):
     await asyncio.sleep(2.5)
     await m.reply_video(
         video = random.choice(PHOTO),
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』**
+        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝗠𝗮𝗵𝗮𝗸𝗮𝗹 𝗥𝗼𝗯𝗼𝘁』**
    ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐃𝐄𝐕](https://t.me/{OWNER_USERNAME})
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [𝐒𝐓𝐃](https://t.me/{OWNER_USERNAME})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
