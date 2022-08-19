@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʏ `{}`,\n \nᴛʜɪs ɪs {}[!](https://telegra.ph/file/0820acefbb082356a19cb.mp4)\n\n*ᴛʜɪs ɪs ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ʟᴀɢ ғʀᴇᴇ ᴍᴜsɪᴄ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\nᴛʜɪs ʙᴏᴛ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ɪᴛ ɪɴ ɢᴇᴛᴛɪɴɢ\nɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ɪᴛs ᴄᴏᴍᴍᴀɴᴅs*\n\n*ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ » /help\n\n*ᴘʀᴇss* » /mstart *ғᴏʀ sᴛᴀʀᴛɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ.*
+ʜᴇʏ `{}`,\n \nᴛʜɪs ɪs {}[!](https://telegra.ph/file/51582c9510773813eba8e.jpg)\n\n*ᴛʜɪs ɪs ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ʟᴀɢ ғʀᴇᴇ ᴍᴜsɪᴄ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\nᴛʜɪs ʙᴏᴛ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ɪᴛ ɪɴ ɢᴇᴛᴛɪɴɢ\nɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ɪᴛs ᴄᴏᴍᴍᴀɴᴅs*\n\n*ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ » /help\n\n*ᴘʀᴇss* » /mstart *ғᴏʀ sᴛᴀʀᴛɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ.*
 
 """
 
@@ -92,7 +92,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="💞𝙰𝙱𝙾𝚄𝚃 𝙼𝙴💞", callback_data="fallen_"),
-        InlineKeyboardButton(text="❣️𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴❣️", callback_data="source_"),
+        InlineKeyboardButton(text="❣️𝙽𝙴𝚃𝚆𝙾𝚁𝙺❣️", callback_data="source_"),
     ],
     [
         InlineKeyboardButton(text="💔𝚂𝚄𝙿𝙿𝙾𝚁𝚃💔", url=f"https://t.me/{SUPPORT_CHAT}"),
@@ -100,12 +100,12 @@ buttons = [
     ],
 ]
 
-FallenRobot_IMG = "https://telegra.ph/file/0820acefbb082356a19cb.mp4"
+FallenRobot_IMG = "https://telegra.ph/file/51582c9510773813eba8e.jpg"
 
 HELP_STRINGS = f"""
-[ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ](t.me/Dev_managerbot) *ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*\n*» ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n*» ɪꜰ ʏᴏᴜ ɢᴏᴛ ᴀɴʏ ɪssᴜᴇ ᴏʀ ʙᴜɢ ɪɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ @{SUPPORT_CHAT}*\n\n*ㅤ   ㅤ» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*\n\n➲ /start : *ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.*\n➲ /donate : *sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.*\n➲ /help  : *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.*\n*  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.*\n*  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ.*\n ➲ /mhelp : *ғᴏʀ ᴍᴜsɪᴄ ʙᴏᴛ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs*"""
+[ᴍᴀʜᴀᴋᴀʟ ʀᴏʙᴏᴛ](t.me/MahakalRobot) *ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*\n*» ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n*» ɪꜰ ʏᴏᴜ ɢᴏᴛ ᴀɴʏ ɪssᴜᴇ ᴏʀ ʙᴜɢ ɪɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ @{SUPPORT_CHAT}*\n\n*ㅤ   ㅤ» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*\n\n➲ /start : *ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.*\n➲ /donate : *sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.*\n➲ /help  : *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.*\n*  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.*\n*  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ.*\n ➲ /mhelp : *ғᴏʀ ᴍᴜsɪᴄ ʙᴏᴛ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs*"""
 
-DONATE_STRING = """[𝐃𝐄𝐕](https://t.me/devarora0981)"""
+DONATE_STRING = """[𝐒𝐓𝐃](https://t.me/STD_KING)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -385,8 +385,8 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="🤍 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🤍", url=f"https://t.me/{OWNER_USERNAME}"
                         ),
                         InlineKeyboardButton(
-                            text="💥 sᴏᴜʀᴄᴇ 💥",
-                            url="https://telegra.ph/file/9b0455dae14d5639f936d.mp4",
+                            text="💥 ɴᴇᴛᴡᴏʀᴋ 💥",
+                            url="https://t.me/Team_STD_Network",
                         ),
                     ],
                     [
@@ -407,15 +407,15 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="❣️ sᴜᴩᴩᴏʀᴛ ❣️", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="🌷 ᴜᴩᴅᴀᴛᴇs 🌷", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="🌷 ᴜᴩᴅᴀᴛᴇs 🌷", url=f"https://t.me/Mahakal_update"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🤍 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🤍", url="https://t.me/devarora0981"
+                            text="🤍 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🤍", url="https://t.me/STD_KING"
                         ),
                         InlineKeyboardButton(
-                            text="💥 ɢɪᴛʜᴜʙ 💥", url="https://github.com/Devarora0981"
+                            text="💥 ɴᴇᴛᴡᴏʀᴋ 💥", url="https://t.me/Team_STD_Network"
                         ),
                     ],
                     [
@@ -439,7 +439,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ*\n\n*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://telegra.ph/file/9b0455dae14d5639f936d.mp4)\n\n*ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐭](https://t.me/we_rfriends) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [𝐃𝐄𝐕](https://t.me/Devarora0981)""",
+            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs ᴍᴀʜᴀᴋᴀʟ ʀᴏʙᴏᴛ*\n\n*ʜᴇʀᴇ ɪs ᴍʏ ꜱᴛᴅ ᴄᴏᴅᴇ :* [ɴᴇᴛᴡᴏʀᴋ](https://t.me/Team_STD_Network)\n\n*ᴍʏ ꜱᴛᴅ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐭](https://t.me/Mahakal_Support) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [𝐒𝐓𝐃](https://t.me/STD_KING)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -691,7 +691,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1356469075 and DONATION_LINK:
+        if OWNER_ID != 1572358619 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -741,8 +741,8 @@ def main():
         try:
             dispatcher.bot.send_video(
                 f"@{SUPPORT_CHAT}",
-                "https://telegra.ph/file/0820acefbb082356a19cb.mp4",
-                caption="ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 💘 ʙʏ ᴅᴇᴠ 🥀",
+                "https://telegra.ph/file/51582c9510773813eba8e.jpg",
+                caption="ᴍᴀʜᴀᴋᴀʟ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 💘 ʙʏ ꜱᴛᴅ 🥀",
             )
         except Unauthorized:
             LOGGER.warning(
