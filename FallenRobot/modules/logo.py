@@ -255,10 +255,10 @@ async def lego(event):
     quew = event.pattern_match.group(1)
     if event.sender_id != OWNER_ID and not quew:
         await event.reply(
-            "`ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙʏ​ !`\n`Example /logo <DEV>`"
+            "`ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙʏ​ !`\n`Example /logo <MAHAKAL>`"
         )
         return
-    pesan = await event.reply("**ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ʟᴏɢᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ sᴇᴄ​...**")
+    pesan = await event.reply("**ᴍᴀʜᴀᴋᴀʟ ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ʟᴏɢᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ sᴇᴄ​...**")
     try:
         text = event.pattern_match.group(1)
         randc = random.choice(LOGO_LINKS)
@@ -288,13 +288,13 @@ async def lego(event):
         fname = "fallen.png"
         img.save(fname, "png")
         await telethn.send_file(
-            event.chat_id, file=fname, caption=f"☟︎︎︎ ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ☟︎︎︎\n   ☞︎︎︎  [ᴅᴇᴠ ✘ ʀᴏʙᴏᴛ](t.me/dev_managerbot)  ☜︎︎︎\n\nʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: [{event.sender.first_name}](tg://user?id={event.sender.id})"
+            event.chat_id, file=fname, caption=f"☟︎︎︎ ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ☟︎︎︎\n   ☞︎︎︎  [ᴍᴀʜᴀᴋᴀʟ ʀᴏʙᴏᴛ](t.me/MahakalRobot)  ☜︎︎︎\n\nʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: [{event.sender.first_name}](tg://user?id={event.sender.id})"
         )
         await pesan.delete()
         if os.path.exists(fname):
             os.remove(fname)
     except Exception as e:
-        await event.reply(f"ғʟᴏᴏᴅᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @wE_rFrIeNdS")
+        await event.reply(f"ғʟᴏᴏᴅᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @Mahakal_Support")
 
 
 __mod_name__ = "Lᴏɢᴏ​"
