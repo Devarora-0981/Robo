@@ -17,19 +17,19 @@ from telegram.ext import Filters
 
 from FallenRobot import pbot as bot
 
-DEV = "https://telegra.ph/file/0820acefbb082356a19cb.mp4"
+DEV = "https://telegra.ph/file/51582c9510773813eba8e.jpg"
 
 
-@bot.on_message(filters.command(["noob", "owner", "chutiya", "gandu", "bsdk", "lvde", "madarchod", "bkl", "lund"]))
+@bot.on_message(filters.command(["noob", "owner", "chutiya", "gandu", "bsdk", "king", "madarchod", "std", "lund"]))
 async def repo(client, message):
     await message.reply_animation(
         animation=ABISHNOI,  # don't change
-        caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [『𝘿𝙀𝙑 ✘ 𝙍𝙊𝘽𝙊𝙏』](t.me/dev_managerbot)**
+        caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [𝙈𝙖𝙝𝙖𝙠𝙖𝙡 𝙍𝙤𝙗𝙤𝙩](https://t.me/MahakalRobot)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ʟᴇɢᴇɴᴅ ᴏᴡɴᴇʀ •", url="https://t.me/Devarora0981"),
+                    InlineKeyboardButton("• ꜱᴛᴅ ᴏᴡɴᴇʀ •", url="https://t.me/STD_KING"),
                 ]
             ]
         ),
