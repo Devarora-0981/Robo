@@ -81,7 +81,7 @@ async def detect_nsfw(_, message):
         return
     await message.reply_text(
         f"""
-**NSFW Image Detected & Deleted Successfully!
+**Porn Image Detected & Deleted Successfully!
 ————————————————————**
 **User:** {message.from_user.mention} [`{message.from_user.id}`]
 **Safe:** `{results.neutral} %`
@@ -90,12 +90,12 @@ async def detect_nsfw(_, message):
 **Hentai:** `{results.hentai} %`
 **Drawings:** `{results.drawings} %`
 **————————————————————**
-__Use `/antinsfw off` to disable this.__
+__Use `/antiporn off` to disable this.__
 """
     )
 
 
-@pbot.on_message(filters.command("nsfwscan"))
+@pbot.on_message(filters.command("pscan"))
 @capture_err
 async def nsfw_scan_command(_, message):
     if not message.reply_to_message:
@@ -140,11 +140,11 @@ async def nsfw_scan_command(_, message):
     )
 
 
-@pbot.on_message(filters.command(["antinsfw", f"antinsfw@{bn}"]) & ~filters.private)
+@pbot.on_message(filters.command(["antiporn", f"antinsfw@{bn}"]) & ~filters.private)
 @adminsOnly("can_change_info")
 async def nsfw_enable_disable(_, message):
     if len(message.command) != 2:
-        await message.reply_text("Usage: /antinsfw [on/off]")
+        await message.reply_text("Usage: /antiporn [on/off]")
         return
     status = message.text.split(None, 1)[1].strip()
     status = status.lower()
@@ -152,10 +152,10 @@ async def nsfw_enable_disable(_, message):
     if status == "on" or status == "yes":
         await nsfw_on(chat_id)
         await message.reply_text(
-            "Enabled AntiNSFW System. I will Delete Messages Containing Inappropriate Content."
+            "Enabled Antip*rn System. I will Delete Messages Containing Inappropriate Content."
         )
     elif status == "off" or status == "no":
         await nsfw_off(chat_id)
-        await message.reply_text("Disabled AntiNSFW System.")
+        await message.reply_text("Disabled Antiporn System.")
     else:
-        await message.reply_text("Unknown Suffix, Use /antinsfw [on/off]")
+        await message.reply_text("Unknown Suffix, Use /antiporn [on/off]")
