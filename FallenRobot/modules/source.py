@@ -7,7 +7,7 @@ from pyrogram import filters
 from FallenRobot import pbot as client
 
 
-GANDU_BSDK = "https://telegra.ph/file/51582c9510773813eba8e.jpg"
+GANDU_BSDK = "https://telegra.ph/file/2de4a73cf3069124e48a8.jpg"
 
 
 @client.on_message(filters.command(["repo", "source", "gand"]))
@@ -22,7 +22,7 @@ async def repo(client, message):
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
 **» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
 
-**ᴍᴀʜᴀᴋᴀʟ ʀᴏʙᴏᴛ sᴏᴜʀᴄᴇ ɪs ᴘʀɪᴠᴀᴛᴇ 🥺 sᴏ ᴜsᴇ ᴍᴀʜᴀᴋᴀʟ ʀᴏʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs.**
+**ꜱʜɪᴋʜᴀ ʀᴏʙᴏᴛ sᴏᴜʀᴄᴇ ɪs ᴘʀɪᴠᴀᴛᴇ 🥺 sᴏ ᴜsᴇ ꜱʜɪᴋʜᴀ ʀᴏʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -30,7 +30,7 @@ async def repo(client, message):
                     InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="t.me/STD_KING"),
                     InlineKeyboardButton(
                         "• sᴜᴘᴘᴏʀᴛ •",
-                        url="https://t.me/Mahakal_Support",
+                        url="https://t.me/Shikha_ki_duniya",
                     ),
                 ]
             ]
