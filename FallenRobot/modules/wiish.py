@@ -7,13 +7,13 @@ from FallenRobot import pbot as FallenRobot
 
 
 WISH_STRINGS = [
-                "Thanks for always being my pillar of strength. I am very blessed to have a brother like you. Happy Raksha Bandhan!",
-                "A very big thank you for being my companion, my protector and being equally weird with me. You are the best brother in this world. Happy Raksha Bandhan!",
-                "Happy Raksha Bandhan to my childhood leg-puller, my lovely brother, my guardian and the only person who knows me inside-out. Thanks for always being there. Happy Raksha Bandhan bro!",
-                "I pray for your happiness, prosperity, and long life, sweetest brother. Sending loads of love and best wishes. Happy Raksha Bandhan.",
-                "You are the only person who supports me in my hard times; you are the one who shakes a leg with me in my happiness. There was no single day in my life when you weren't there. I really love you my big brother.",
-                "You supported me while I was in distress; you protected me when I was scared and all other things you did to make me happy. Thanks are just insufficient to express my gratitude. Happy Raksha Bandhan to you Brother!",
-                "Dearest sister, this Raksha Bandhan, I promise to always be your savior and will always be by your side no matter what. Sending loads of blessings and gifts just for you!",
+                "मेरी वफा की कदर ना की अपनी पसन्द पे एतबार किया होता,सुना है वो उनकी भी ना हुई मुझे छोड़ दिया था तो उसे अपना लिया होता!",
+                "मुद्दतों बाद भी नहीं मिलते हम जैसे नायाब लोग तेरे हाथ क्या लग गए तुमने तो हमे आम समझ लिया!",
+                "अभी तक मौजूद है इस दिल पर तेरे कदमों के निशां..हमने तेरे बाद किसी को इस राह से गुजरने नहीं दिया!",
+                "बेहद करीब है वो शख़्स आज भी मेरे इस दिल के, जिसने खामोशियों का सहारा लेकर दुरियों को अंजाम दिया.",
+                "हो सके तो फिर मिलेंगे, शायद अनजान बनकर कोई नई जिंदगी जी कर, कोई नई पहचान बनकर.",
+                "ᴋʏᴀ ғᴀʀᴋ ᴘᴀᴅᴛᴀ ʜᴀɪ ᴍᴇʀᴇ ʜᴀsɴᴇ sᴇ ...ᴍᴇʀᴇ ʀᴏɴᴇ sᴇ ᴍᴇʀᴇ ʜᴏɴᴇ sᴇ ...ʏᴀ ᴍᴇʀᴇ ɴᴀ ʜᴏɴᴇ sᴇ... 🥺!",
+                "ʏᴇ ʀᴀᴀᴛ ʜᴜᴍꜱᴇ ʙᴏʜᴏᴛ ᴘʏᴀᴀʀ ᴋᴀʀᴛɪ ʜᴀɪɴ,ꜱᴀʙᴋᴏ ꜱᴜʟᴀᴋᴀʀ ʜᴜᴍꜱᴇ ᴀᴋᴇʟᴇ ᴍᴀɪɴ ʙᴀᴀᴛ ᴋᴀʀᴛɪ ʜᴀɪ...!!🥺💔🥺!",
                 "May god bless my angelic sister with loads of happiness, health and success. Happy Raksha Bandhan.",
                 "I wait for the day throughout the year to see you tie a Rakhi so religiously on my wrist and pray to God for my well-being. Sweetest Sis, I wish our bond grows stronger day by day...",
                 "To have an affectionate relationship with a sister is not just to have a friend or a confidant -- it is to have a companion for life."
