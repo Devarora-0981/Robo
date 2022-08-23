@@ -20,7 +20,7 @@ WISH_STRINGS = [
                ]
 
 
-@FallenRobot.on_message(filters.command(["rakshabandhan", "rakhi"]))
+@FallenRobot.on_message(filters.command(["sadshayari", "feelings"]))
 async def lel(bot, message):
     ran = random.choice(WISH_STRINGS)
     await bot.send_chat_action(message.chat.id, "Typing")
@@ -33,6 +33,6 @@ __help__ = """
 
 *ᴍᴀᴋᴇs ᴀ ꜱᴀᴅ-ꜱʜᴀʏᴀʀɪ ǫᴜᴏᴛᴇ ғᴏʀ ᴜʀ ꜱᴀᴅ-ꜱʜᴀʏᴀʀɪ & ꜰᴇᴇʟɪɴɢꜱ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
 
-❍ /SadShayari *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ꜱʜᴀʏᴀʀɪ.* \n\n ❍ /feelings *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ꜰᴇᴇʟɪɴɢꜱ!!.* \n\n [🥀Support Chat🥀](t.me./Team_STD_Network)
+❍ /sadShayari *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ꜱʜᴀʏᴀʀɪ.* \n\n ❍ /feelings *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ꜰᴇᴇʟɪɴɢꜱ!!.* \n\n [🥀Support Chat🥀](t.me/Team_STD_Network)
 
  """
