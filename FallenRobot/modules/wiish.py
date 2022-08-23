@@ -27,12 +27,12 @@ async def lel(bot, message):
     await asyncio.sleep(1)
     return await message.reply_text(text=ran)
 
-__mod_name__ = "ʀᴀᴋʜɪ"
+__mod_name__ = "ꜱᴀᴅ-ꜱʜᴀʏᴀʀɪ"
 
 __help__ = """
 
-*ᴍᴀᴋᴇs ᴀ ʀᴀᴋsʜᴀʙᴀɴᴅʜᴀɴ ǫᴜᴏᴛᴇ ғᴏʀ ᴜʀ sɪsᴛᴇʀ & ʙʀᴏᴛʜᴇʀ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
+*ᴍᴀᴋᴇs ᴀ ꜱᴀᴅ-ꜱʜᴀʏᴀʀɪ ǫᴜᴏᴛᴇ ғᴏʀ ᴜʀ ꜱᴀᴅ-ꜱʜᴀʏᴀʀɪ & ꜰᴇᴇʟɪɴɢꜱ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
 
-❍ /rakhi *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ sɪsᴛᴇʀ.* \n\n ❍ /rakshabandhan *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ʙʀᴏᴛʜᴇʀ!!.* \n\n [🥀Support Chat🥀](t.me./Team_STD_Network)
+❍ /SadShayari *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ꜱʜᴀʏᴀʀɪ.* \n\n ❍ /feelings *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ꜰᴇᴇʟɪɴɢꜱ!!.* \n\n [🥀Support Chat🥀](t.me./Team_STD_Network)
 
  """
