@@ -52,6 +52,6 @@ __help__ = """
 
 *ᴍᴀᴋᴇs ᴀ sʜᴀʏᴀʀɪ ғᴏʀ ᴜʀ ɢɪʀʟғʀɪᴇɴᴅ & ʙᴏʏғʀɪᴇɴᴅ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
 
-❍ /romantic *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n ❍ /shayari *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n [🥀Support Chat🥀](t.me/Mahakal_Support)
+❍ /romantic *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n ❍ /shayari *:* *ᴡʀɪᴛᴇ sʜᴀʏᴀʀɪ ғᴏʀ ʏᴏᴜʀ ʙᴀʙʏ.* \n\n [🥀Support Chat🥀](t.me/Team_STD_Network)
 
  """
