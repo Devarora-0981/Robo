@@ -33,6 +33,6 @@ __help__ = """
 
 *ᴍᴀᴋᴇs ᴀ ʀᴀᴋsʜᴀʙᴀɴᴅʜᴀɴ ǫᴜᴏᴛᴇ ғᴏʀ ᴜʀ sɪsᴛᴇʀ & ʙʀᴏᴛʜᴇʀ* \n*ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛʜᴇᴍ.*
 
-❍ /rakhi *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ sɪsᴛᴇʀ.* \n\n ❍ /rakshabandhan *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ʙʀᴏᴛʜᴇʀ!!.* \n\n [🥀Support Chat🥀](t.me./Mahakal_Support)
+❍ /rakhi *:* *ᴡʀɪᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ sɪsᴛᴇʀ.* \n\n ❍ /rakshabandhan *:* *ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇ ғᴏʀ ʏᴏᴜʀ ʙʀᴏᴛʜᴇʀ!!.* \n\n [🥀Support Chat🥀](t.me./Team_STD_Network)
 
  """
