@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʏ `{}`,\n \nᴛʜɪs ɪs {}[!](https://telegra.ph/file/0820acefbb082356a19cb.mp4)\n\n*ᴛʜɪs ɪs ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ʟᴀɢ ғʀᴇᴇ ᴍᴜsɪᴄ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\nᴛʜɪs ʙᴏᴛ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ɪᴛ ɪɴ ɢᴇᴛᴛɪɴɢ\nɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ɪᴛs ᴄᴏᴍᴍᴀɴᴅs*\n\n*ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ » /help\n\n*ᴘʀᴇss* » /mstart *ғᴏʀ sᴛᴀʀᴛɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ.*
+ʜᴇʏ `{}`,\n \nᴛʜɪs ɪs {} \n\n*ᴛʜɪs ɪs ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ʟᴀɢ ғʀᴇᴇ ᴍᴜsɪᴄ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\nᴛʜɪs ʙᴏᴛ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ɪᴛ ɪɴ ɢᴇᴛᴛɪɴɢ\nɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ɪᴛs ᴄᴏᴍᴍᴀɴᴅs*\n\n*ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ » /help\n\n*ᴘʀᴇss* » /mstart *ғᴏʀ sᴛᴀʀᴛɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ.*
 
 """
 
@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAIO9GLiRQyopoY93u8kQqsrnJK9o423AAI4AgACXecaJr94GyqK91k0KQQ"
+                "CAACAgUAAxkBAAJGVGMJJD4WPsJE0F8oVBPb6qk7qR0gAAIOCQACAndIVKLu27YtYpA5KQQ"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
