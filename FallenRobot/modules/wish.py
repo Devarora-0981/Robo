@@ -16,7 +16,7 @@ async def wish(e):
         await pbot.send_file(
             e.chat_id,
             fire,
-            caption=f"**ʜᴇʏ [{e.sender.first_name}](tg://user?id={e.sender.id}), ʏᴏᴜʀ ᴡɪꜱʜ ʜᴀꜱʜ ʙᴇᴇɴ ᴄᴀꜱᴛ.💜**\n\n__ᴄʜᴀɴᴄᴇ ᴏꜰ ꜱᴜᴄᴄᴇꜱꜱ {mm}%__",
+            caption=f"**ʜᴇʏ [{e.sender.first_name}](tg://user?id={e.sender.id}), ʏᴏᴜʀ ᴡɪꜱʜ ʜᴀꜱ ʙᴇᴇɴ ᴄᴀꜱᴛ.💜**\n\n__ᴄʜᴀɴᴄᴇ ᴏꜰ ꜱᴜᴄᴄᴇꜱꜱ {mm}%__",
             reply_to=lol,
         )
     if not e.is_reply:
@@ -25,6 +25,6 @@ async def wish(e):
         await pbot.send_file(
             e.chat_id,
             fire,
-            caption=f"**ʜᴇʏ [{e.sender.first_name}](tg://user?id={e.sender.id}), ʏᴏᴜʀ ᴡɪꜱʜ ʜᴀꜱʜ ʙᴇᴇɴ ᴄᴀꜱᴛ.💜**\n\n__ᴄʜᴀɴᴄᴇ ᴏꜰ ꜱᴜᴄᴄᴇꜱꜱ {mm}%__",
+            caption=f"**ʜᴇʏ [{e.sender.first_name}](tg://user?id={e.sender.id}), ʏᴏᴜʀ ᴡɪꜱʜ ʜᴀꜱ ʙᴇᴇɴ ᴄᴀꜱᴛ.💜**\n\n__ᴄʜᴀɴᴄᴇ ᴏꜰ ꜱᴜᴄᴄᴇꜱꜱ {mm}%__",
             reply_to=e,
         )
