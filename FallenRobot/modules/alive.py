@@ -31,6 +31,15 @@ STICKER = [
      "CAACAgUAAxkBAAIsHWMKc2TWpvjjOdyCk3ElS0gWTKVWAAL1CAACYnB9KWTD8cH10NiqKQQ",
 ]
 
+EMOJIS = [
+     "💥",
+     "💥",
+     "⚡",
+     "💣",
+     "🪄",
+     "❄️",
+     "☀️",
+]
 SHREYXD = [
     [
         InlineKeyboardButton(text="• ᴅᴇᴠᴇʟᴏᴘᴇʀ •", url=f"https://t.me/Devarora0981"),
@@ -47,7 +56,9 @@ SHREYXD = [
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
     await m.delete()
-    accha = await m.reply("⚡")
+    accha = await m.reply_text(
+                text = random.choice(EMOJIS),
+    )
     await asyncio.sleep(2)
     await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
     await asyncio.sleep(0.5)
