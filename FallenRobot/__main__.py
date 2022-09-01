@@ -74,6 +74,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+OP_STICKERS = [
+    [
+        "CAACAgUAAxkBAAJKbmMQvo83pPtMNhOjRNNZ66WURXk8AAJeBwACkXCJVMRbIZVqUvY4KQQ",
+        "CAACAgUAAxkBAAJKb2MQvpBgBh9iiEM-D6W9LrHm5hU9AAK2BQACLcaJVDhOMpfBaoXYKQQ",
+        "CAACAgUAAxkBAAJKdWMQvtZrWYLsoOnL2qs7HHlElrczAAKBBwAC-VtJVCuad8AvYpvqKQQ",
+        "CAACAgUAAxkBAAJKgGMQwGQvQ7pB75E4QE0ZcCNKy8JIAAIOCQACAndIVKLu27YtYpA5KQQ",
+        "CAACAgUAAxkBAAJKgGMQwGQvQ7pB75E4QE0ZcCNKy8JIAAIOCQACAndIVKLu27YtYpA5KQQ",
+]
+   
+
 
 PM_START_TEXT = """
 ʜᴇʏ🥀 `{}`,
@@ -215,7 +225,8 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJGVGMJJD4WPsJE0F8oVBPb6qk7qR0gAAIOCQACAndIVKLu27YtYpA5KQQ"
+                                     sticker = random.choice(OP_STICKERS)
+
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
