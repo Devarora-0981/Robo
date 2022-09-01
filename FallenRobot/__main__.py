@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 OP_STICKERS = [
-    [
+
         "CAACAgUAAxkBAAJKbmMQvo83pPtMNhOjRNNZ66WURXk8AAJeBwACkXCJVMRbIZVqUvY4KQQ",
         "CAACAgUAAxkBAAJKb2MQvpBgBh9iiEM-D6W9LrHm5hU9AAK2BQACLcaJVDhOMpfBaoXYKQQ",
         "CAACAgUAAxkBAAJKdWMQvtZrWYLsoOnL2qs7HHlElrczAAKBBwAC-VtJVCuad8AvYpvqKQQ",
