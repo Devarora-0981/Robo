@@ -61,3 +61,5 @@ gpytranslate
 yt_dlp
 envparse
 better_profanity
+nudepy
+nude
