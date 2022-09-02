@@ -63,3 +63,6 @@ envparse
 better_profanity
 nudepy
 nude
+nude
+ nude
+nude 
