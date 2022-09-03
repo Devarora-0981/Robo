@@ -3,7 +3,7 @@ import os
 import re
 import better_profanity
 import emoji
-import nudepy
+import nude
 import requests
 from better_profanity import profanity
 from google_trans_new import google_translator
