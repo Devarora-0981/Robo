@@ -60,3 +60,5 @@ telegram
 gpytranslate
 yt_dlp
 envparse
+better_profanity
+nude
