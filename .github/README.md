@@ -15,4 +15,4 @@
 
 ### ㅤCREDITS 😘
 
-🖤 𝐃𝐄𝐕 : ᴍᴇ ᴏɴ [ɢɪᴛʜᴜʙ💞](https://github.com/Devarora0987) ᴍᴇ ᴏɴ [ᴛᴇʟᴇɢʀᴀᴍ💔](https://telegram.me/devarora0981)
+🖤 ANONYMOUS : ᴍᴇ ᴏɴ [ɢɪᴛʜᴜʙ💞](https://github.com/AnonymousR1025) ᴍᴇ ᴏɴ [ᴛᴇʟᴇɢʀᴀᴍ💔](https://telegram.me/DevilsHeavenMF)
