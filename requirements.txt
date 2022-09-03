@@ -62,3 +62,4 @@ yt_dlp
 envparse
 better_profanity
 nudepy
+google-trans-new
