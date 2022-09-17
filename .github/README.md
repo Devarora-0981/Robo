@@ -26,7 +26,7 @@
 ━━━━━━━━━━
 <details>
 <summary><h3>CREDITS 😘</h3></summary>
-<pre><i>AnonymousR1025</i><</pre>
+<pre><i>AnonymousR1025</i></pre>
 </details>
 
 🖤 Anonymous On [ɢɪᴛʜᴜʙ💞](https://github.com/AnonymousR1025) Anonymous On [ᴛᴇʟᴇɢʀᴀᴍ💔](https://telegram.me/Anonymous_was_bot)
