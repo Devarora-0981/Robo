@@ -13,15 +13,19 @@
   <img src="https://telegra.ph/file/8c1d3c31097c72aed98ca.jpg">
 </p>
 
-## 🖤ᴅᴇᴠ ʀᴏʙᴏᴛ🖤
+<p><i>🖤ᴅᴇᴠ ʀᴏʙᴏᴛ🖤</i></p>
 ɪ ᴀᴍ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [💞ᴅᴇᴠ ʀᴏʙᴏᴛ​💞](https://t.me/Dev_managerBot)
 ᴛʜɪs ɪs ᴀ ᴅᴇᴍᴏ ʙᴏᴛ <br> ɪ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ нσω ʟᴏɴɢᴇʀ ɪ'ʟʟ вε ʜᴏsᴛɪɴɢ ɪᴛ​...
 ━━━━━━━━━━━━━━━━━━━━━━
-## ㅤㅤㅤᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ​ 🚀
-ㅤㅤㅤᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴅᴇᴠ ʀᴏʙᴏᴛ​
+<details>
+<summary><h4>ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ​ 🚀</h4></summary>
+<pre><b>ᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴅᴇᴠ ʀᴏʙᴏᴛ​</b></pre>
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Devarora09876/Dev-Robot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
- ━━━━━━━━━━━━━━━━━━━━━━
+</details>
+━━━━━━━━━━━━━━━━━━━━━━
+<details>
+<summary><h3>CREDITS 😘</h3></summary>
+<pre><i>AnonymousR1025</i><</pre>
+</details>
 
-###ㅤㅤCREDITS 😘
-
-🖤 𝐃𝐄𝐕 : ᴍᴇ ᴏɴ [ɢɪᴛʜᴜʙ💞](https://github.com/Devarora0987)ㅤ ᴍᴇ ᴏɴ [ᴛᴇʟᴇɢʀᴀᴍ💔](https://telegram.me/devarora0981)
+🖤 Anonymous On [ɢɪᴛʜᴜʙ💞](https://github.com/AnonymousR1025) Anonymous On [ᴛᴇʟᴇɢʀᴀᴍ💔](https://telegram.me/Anonymous_was_bot)
